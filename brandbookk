@@ -1,0 +1,114 @@
+# Skin LAB Editorial — Brand System (machine-readable spec)
+
+> Visual + verbal system for **Skin LAB Editorial**, a European/Americas skincare-intelligence
+> account on Instagram & TikTok. Outputs feel like a **scientific journal crossed with a European
+> editorial magazine**. Not a beauty blog. Not a pharmacy. A publication.
+> Identity in one line: **the intelligence of a lab, the eye of a magazine.** One word: **discernment.**
+> Subtitle / tagline (confirmed): **“Ingredients, decoded.”**
+>
+> The full visual reference is **`Skin LAB Brandbook.html`** (open it to see every rule applied).
+> When generating any post, slide, carousel, or video, obey the rules below.
+
+## Positioning & pillars
+- **Essence:** Discernment — to see clearly despite the noise.
+- **Persona:** a Parisian dermatologist who reads *The Gentlewoman* and has a studio in the Marais. Informed, refined, never clinical, never cute.
+- **Audience:** educated, skeptical readers who have outgrown the noise (they know niacinamide from panthenol).
+- **Goal:** attract → inform → retain → convert credibility into PR partnerships. No paid reviews; gifting never compromises the copy.
+- **Three pillars:** (1) **Earned clarity** — make complexity legible without making it simple; start from evidence. (2) **Editorial conviction** — have a point of view and defend it; opinion is not bias. (3) **Quiet luxury of knowledge** — intelligence is the only status signal; restraint is the luxury marker.
+- **Manifesto (north star):** “Most skincare content is made to sell you something. We are not selling anything… We tell you exactly what we found — not what a brand paid us to say, not what an algorithm rewarded. What the evidence says. We exist for the moment after the confusion.”
+
+## Logo & identity
+- **Primary wordmark:** “Skin Lab” in **Fraunces** Regular (tracking −20, leading 1.4, 137pt) above “EDITORIAL” in **Proxima Nova** Regular, all caps (tracking +442, leading 1.4, 46.4pt — ~0.34× the name). Three colourways: Ink on Bone (default), Frost on Sage, Sage on Bone. Asset files in `assets/logo-wordmark-*.png`.
+- **Seal / secondary mark:** circular molecular stamp reading “SKIN LAB EDITORIAL” (top arc) + “INGREDIENTS, DECODED” (bottom arc) around a 4-node molecule. Two colourways: Ink on Bone, Frost on Sage (`assets/logo-stamp-*.png`). Use as the IG/TikTok **avatar**, TikTok end card, stickers, and any context too small for the full lockup.
+- **Isotype:** the 4-node molecule alone, hand-inked/textured (`assets/logo-isotype.png`). The most reduced mark — app icon, favicon, embossing, single-colour stamp. Ink on light, or knocked out in Bone/Frost on Ink or Sage.
+- **Clear space:** cap-height of “S” on all sides. **Minimum width** for full lockup ~120px; below that use the seal or the name alone.
+- Never re-set the wordmark in another face, stretch/outline/shadow it, or use pure-white / pure-black versions.
+- Web rendering: Fraunces loads live; **DM Sans substitutes for Proxima Nova** in the tracked caps (identical at this tracking).
+
+## Molecular pattern
+- A tone-on-tone background texture derived from the seal's 4-node molecule. Tiles in `assets/pattern-molecule-*.png` — two colourways (**sage**, **bone/cloud**) × two densities (scattered, dense).
+- **Backgrounds only.** Story panels, cover fills, the TikTok end card, packaging tissue. Keep it *barely there* — it must never compete with type or photography, and live text never sits on the dense version. Web utility: `.bg-molecule` (or set the tile as a `background-image`, `background-size ~660px`, repeating).
+
+## Fonts
+- **Proxima Nova** (web substitute in use: **DM Sans** — Light 300 / Regular 400 / Medium 500 / Bold 700) — the **workhorse**, carries almost everything: body, captions, ingredient lists; **caps + bold** for secondary titles & subtitles; **light tracked caps** for labels & data/numbers.
+- **Fraunces** (Regular, optical sizing) — the **spotlight** face. The “Skin Lab” wordmark, and beyond the logo only the ONE element per layout that must stand out most: a marquee title, a hero ingredient / peptide name. **Never body, labels, or captions.**
+- Google Fonts import:
+  `https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400;1,9..40,500&display=swap`
+- THE ONE RULE: **Proxima Nova does the work; Fraunces takes the spotlight.** One layout, one moment of Fraunces. They never compete at the same level.
+- Reference for the two-font distribution (use, not the actual faces): **rhode** — one grotesque workhorse for nav/body + a distinctive display cut for marquee words.
+
+## Type scale
+| Role | Font | Size (print-pt equiv) |
+|---|---|---|
+| Marquee title / hero ingredient | **Fraunces** Regular | 48–96 |
+| Secondary title / subtitle | Proxima Nova **Bold**, caps, light tracking | 22–36 |
+| Body / analysis | Proxima Nova Regular | 14–16 |
+| Labels / data | Proxima Nova Light, tracked wide (uppercase) | 11–12 |
+
+## Color system (CSS vars in `styles/brand.css`)
+| Name | Hex | Use |
+|---|---|---|
+| Bone | `#F5F0E8` | Primary background. **Always present.** |
+| Ink | `#1A1A18` | Text, dark post backgrounds, anchors. |
+| Lab Sage | `#BBD1C6` | Primary brand accent. Headers, key highlights. |
+| Lab Mist | `#DAE9DF` | Secondary backgrounds, slide fills. Opens the document gradient (→ Frost). |
+| Lab Frost | `#ECF0EE` | Tertiary backgrounds, breathing space. |
+| Linen | `#F1EAE1` | Warm neutral surface. Props, paper, soft fields. |
+| Cloud | `#FAFAFA` | Off-white, maximum breathing space. |
+| Petal | `#E6D2D0` | **Skin / K-beauty content ONLY** — not a core brand colour. Dusty rose. |
+
+**Color rules:** max 4 colors per composition · Bone + Ink always present · never neon/saturated/warm-bright · never pure white `#FFFFFF` or pure black `#000000` · **text on Ink = Lab Sage or Lab Frost only, never white.**
+
+## Photography — four permitted image types
+1. **Texture macro** — formula close-up (serum drop, cream, gel swatch). Directional natural light, no visible background.
+2. **Lab objects** — beakers, pipettes, vials on linen / sage tile / aged paper. Never 3D rendered.
+3. **The label** — extreme close-up of a real INCI ingredient list (printed paper, ink, grain). The label is the truth document; this is the most on-brand “evidence” image. (Replaces botanical archive.)
+4. **Skin / in-use** — hands applying product, real skin texture, tight crop. Swatches on real skin only, never white card.
+
+Always: natural directional light, textured surfaces (linen, sage tile, aged paper, stone).
+Never: ring light, white studio bg, 3D lab renders, before/after clinical comparisons, influencer selfies, cluttered flatlays.
+Until real photos exist, use striped placeholders with a monospace note naming the required shot. Botanical illustration is NOT a core type — only a rare exception for genuine ingredient-origin stories, and only in scientific herbarium-plate style (specimen + Latin binomial), never floral/romantic.
+
+## Carousel architecture (Instagram, 10 slides, 4:5 portrait 1080×1350)
+1. **Cover** — product hero image + title (Bold) + category label.
+2. **The verdict** — 2–3 lines, direct opinion, no hedging.
+3–7. **Analysis** — one ingredient/claim per slide; percentage if known; mechanism in plain language.
+8. **Swatch** — texture on skin, **no text overlay**.
+9. **Comparison** — vs. category alternatives.
+10. **Final call** — Lab Score: **Save / Skip / Invest**.
+
+### The Lab Score, defined
+Scored on three axes — **efficacy** (actives work at a dose that matters), **evidence** (research supports the claim), **price-to-active** (worth the cost). The verdict is set BEFORE a brand is contacted; gifting never moves it. Every final-call slide carries the method line: *scored on formulation, evidence & price-per-active.*
+- **Skip (no):** formulation doesn't deliver — actives below threshold, poor delivery/stability, sabotaging irritants/fragrance, or an unsupported claim. Not worth your money at any price.
+- **Save (yes, but):** a good formulation with one condition — *price* (a rival has better price-to-active; buy on a drop), *conditional* (works for a specific skin type/goal, not universal), *redundant* (doesn't beat what you likely already own), or *unproven* (promising but evidence/maturity isn't there yet). Merit is real; the purchase is qualified.
+- **Invest (yes):** excellent and justifies its price — proven merit, broad benefit, correct price-to-active. Buy and recommend without asterisks.
+
+Background rotation: Bone → Ink → Lab Mist → Petal → Bone → Ink … On Ink slides, text is Sage or Frost. Never two Ink slides adjacent. Educational carousels reuse the same architecture without a product to sell.
+
+## Feed rhythm (Instagram grid, 6-post cycle, read left→right)
+```
+[COVER]  [TEXTURE MACRO]  [DATA SLIDE]
+[SKIN]   [BOTANICAL]      [LAB OBJECT]
+```
+- Cover posts: Lab Sage bg + Ink text.
+- Data slides: Ink bg + Lab Sage text.
+- Texture / botanical / lab: Bone bg.
+- Skin in-use: Petal bg.
+- **Never two Ink posts adjacent.**
+
+## TikTok (9:16 vertical)
+- Open 0–2s: texture macro, no voiceover.
+- Text overlays: DM Sans **Bold** in Bone (`#F5F0E8`) on **Ink strips**. Never native TikTok fonts.
+- End card: the **seal** (molecular stamp) or LAB wordmark centred on Frost (`#ECF0EE`), static, 1.5s.
+
+## Voice
+Short sentences. One idea. Full stop. Active voice, no filler. Ingredient percentages when discussing formulas. Disclose gifted/PR in the first line. Precision over enthusiasm — we state, we do not exclaim. The silence (what we choose not to say) is part of the voice. Reference tone: *The Gentlewoman* meets *Lab Muffin Beauty Science*.
+- **Archetype:** an **editor** — not a dermatologist, not an influencer. We read before we recommend; compare before we conclude; translate complexity without removing nuance; give the full answer, not the easy one.
+- **Core attributes:** (1) **Intelligent** — know more than we say, demonstrate not perform. (2) **Clear** — make the reader smarter, not ourselves sound smart. (3) **Opinionated** — evidence first, then a verdict; willing to choose. (4) **Curious** — investigate claims, follow ingredients, question reputations. (5) **Elegant** — no drama, outrage, clickbait, or superiority.
+- **Words we own:** formulation (not “product”), mechanism, efficacy, ratio, consider, evidence, texture, discern, formulate, *the label* (the INCI list as the truth document).
+- **Words we never use:** glow, game-changer, hydrating (as superlative), natural, toxic, clean, obsessed, luxury (self-described), miracle, amazing, holy grail — and never exclamation marks.
+
+## What this brand is NOT
+Not Drunk Elephant (color maximalism), not Glow Recipe (candy-pink), not generic wellness (warm beige, cursive, crystals), not clinical/pharmaceutical (cold white, no texture), not influencer beauty (ring light, selfie, haul).
+
+**The ship test:** does it read as a publication, or as an advertisement? We are always the former.
