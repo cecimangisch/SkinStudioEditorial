@@ -74,14 +74,17 @@ Design is handled externally by the design team. The system produces copy only.
 
 ### Always run:
 1. CEO → editorial angle + flags
-2. Research
-3. Copywriter (after Research)
-4. Editor in Chief → final approval + fixes
+2. Community Manager → platform brief to Copywriter (engagement objective, IG/TikTok execution context, constraints)
+3. Research (in parallel with CM platform brief)
+4. Copywriter (after Research + CM brief — needs both)
+5. Editor in Chief → final approval + fixes
 
 ### Conditional:
 - **PR agent** → only if CEO sets PR_FLAG = YES (~30% of posts)
 - **Distribution agent** → only if CEO sets DIST_FLAG = YES (~20% of posts)
 - **Analytics agent** → runs weekly/monthly independently, not per post
+
+The Copywriter does not start writing until they have both the Research output and the Community Manager platform brief.
 
 ---
 
