@@ -42,10 +42,12 @@ User provides a campaign theme, timeframe, or goal.
 
 | Agent | File | Role |
 |---|---|---|
-| Community Manager | community-manager.md | Calendar, CEO briefs, output organization |
-| CEO / Creative Director | ceo-creative-director.md | Editorial angle, orchestration, flags |
+| Content Strategist | community-manager.md | Shared brand brief, unified calendar, CEO briefs |
+| CM — Instagram | cm-instagram.md | IG platform plan, feed grid, IG brief to Copywriter |
+| CM — TikTok | cm-tiktok.md | TikTok platform plan (independent), TikTok brief to Copywriter |
+| CEO / Creative Director | ceo-creative-director.md | Editorial angle per post, flags |
 | Head of Research | head-of-research.md | Ingredient science, INCI, trends |
-| Chief Copywriter | chief-copywriter.md | All written content by column |
+| Chief Copywriter | chief-copywriter.md | All written content — IG and TikTok separately |
 | Head of PR | head-of-pr.md | Outreach (conditional — PR_FLAG only) |
 | Head of Distribution | head-of-distribution.md | Platform strategy (conditional — DIST_FLAG only) |
 | Editor in Chief | editor-in-chief.md | Audit, fixes, final approval |
@@ -70,21 +72,32 @@ Design is handled externally by the design team. The system produces copy only.
 
 ---
 
-## PIPELINE PER POST
+## PIPELINE — FULL CAMPAIGN (Mode B)
 
-### Always run:
+```
+1. Content Strategist → shared brand brief (one document, both platforms)
+2. IG CM + TikTok CM → platform plans independently (in parallel)
+3. Content Strategist → unified MASTER-CALENDAR.md
+4. CEO → editorial angle + flags per post
+```
+
+Then per post:
+```
+5. Research + CM platform brief (in parallel)
+6. Copywriter (needs both — does not start without both)
+7. Editor in Chief → final approval
+8. [PR agent if PR_FLAG] [Distribution agent if DIST_FLAG]
+```
+
+## PIPELINE — SINGLE POST (Mode A)
+
+```
 1. CEO → editorial angle + flags
-2. Community Manager → platform brief to Copywriter (engagement objective, IG/TikTok execution context, constraints)
-3. Research (in parallel with CM platform brief)
-4. Copywriter (after Research + CM brief — needs both)
-5. Editor in Chief → final approval + fixes
-
-### Conditional:
-- **PR agent** → only if CEO sets PR_FLAG = YES (~30% of posts)
-- **Distribution agent** → only if CEO sets DIST_FLAG = YES (~20% of posts)
-- **Analytics agent** → runs weekly/monthly independently, not per post
-
-The Copywriter does not start writing until they have both the Research output and the Community Manager platform brief.
+2. IG CM or TikTok CM (whichever platform) → platform brief
+3. Research + CM platform brief (in parallel)
+4. Copywriter (needs both)
+5. Editor in Chief
+```
 
 ---
 
