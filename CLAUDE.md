@@ -42,16 +42,18 @@ User provides a campaign theme, timeframe, or goal.
 
 | Agent | File | Role |
 |---|---|---|
-| Community Manager | agents/community-manager.md | Calendar, CEO briefs, output organization |
-| CEO / Creative Director | agents/ceo-creative-director.md | Editorial angle, orchestration, flags |
-| Head of Research | agents/head-of-research.md | Ingredient science, INCI, trends |
-| Chief Copywriter | agents/chief-copywriter.md | All written content by column |
-| Visual Identity Director | agents/visual-identity-director.md | Art direction, Gemini prompts, Canva specs |
-| Head of PR | agents/head-of-pr.md | Outreach (conditional — PR_FLAG only) |
-| Head of Distribution | agents/head-of-distribution.md | Platform strategy (conditional — DIST_FLAG only) |
-| Editor in Chief | agents/editor-in-chief.md | Audit, fixes, final approval |
-| Brand Strategist | agents/brand-strategist.md | Run once — foundational messaging |
-| Analytics & Impact | agents/analytics-impact.md | Weekly/monthly performance reports |
+| Community Manager | community-manager.md | Calendar, CEO briefs, output organization |
+| CEO / Creative Director | ceo-creative-director.md | Editorial angle, orchestration, flags |
+| Head of Research | head-of-research.md | Ingredient science, INCI, trends |
+| Chief Copywriter | chief-copywriter.md | All written content by column |
+| Head of PR | head-of-pr.md | Outreach (conditional — PR_FLAG only) |
+| Head of Distribution | head-of-distribution.md | Platform strategy (conditional — DIST_FLAG only) |
+| Editor in Chief | editor-in-chief.md | Audit, fixes, final approval |
+| Brand Strategist | brand-strategist.md | Run once — foundational messaging |
+| Analytics & Impact | analytics-impact.md | Weekly/monthly performance reports |
+
+**Visual Identity Director is NOT part of the agent pipeline.**
+Design is handled externally by the design team. The system produces copy only.
 
 ---
 
@@ -72,10 +74,9 @@ User provides a campaign theme, timeframe, or goal.
 
 ### Always run:
 1. CEO → editorial angle + flags
-2. Research (in parallel with Visual)
-3. Visual Direction (in parallel with Research)
-4. Copywriter (after Research)
-5. Editor in Chief → final approval + fixes
+2. Research
+3. Copywriter (after Research)
+4. Editor in Chief → final approval + fixes
 
 ### Conditional:
 - **PR agent** → only if CEO sets PR_FLAG = YES (~30% of posts)
@@ -90,16 +91,15 @@ User provides a campaign theme, timeframe, or goal.
 /output/campaigns/[campaign-slug]/
 ├── MASTER-CALENDAR.md
 ├── analytics/ (weekly + monthly reports)
-├── [NN]-[day]-[platform]-[slug]/
-│   ├── OBJECTIVE.md
-│   ├── copy.md
-│   ├── visual-brief.md
-│   ├── pr.md (if applicable)
-│   ├── distribution.md (if applicable)
-│   └── slides/
-│       ├── slide-01.png
-│       └── ...
+└── [NN]-[day]-[platform]-[slug]/
+    ├── OBJECTIVE.md
+    ├── copy.md          ← the only deliverable per post
+    ├── pr.md            (if PR_FLAG = YES)
+    └── distribution.md  (if DIST_FLAG = YES)
 ```
+
+**No visual-brief.md. No slides folder. No Python scripts. No Gemini prompts.**
+Design is handled by the design team externally.
 
 ---
 
@@ -107,8 +107,9 @@ User provides a campaign theme, timeframe, or goal.
 All content is static: images and carousels.
 TikTok uses Photo Mode (3-5 slide static carousel).
 
-## IMAGE GENERATION
-When a slide needs real photography: write a Gemini prompt (Visual Director handles this).
-For typography-only slides: generate with Python + Pillow.
-Fonts at: /tmp/slidefonts/ — Fraunces + DM Sans (Proxima Nova substitute).
-All slides: 1080×1080px (square) or 1080×1350px (portrait). Brand color system only.
+## copy.md FORMAT
+Each copy.md contains:
+1. Slide-by-slide text (headline + body per slide, in order)
+2. Instagram caption (hook + body 80-110 words + CTA + hashtags)
+3. TikTok caption (if DIST_FLAG = YES or platform is TikTok)
+No layout instructions. No color specs. No font notes. Copy only.
