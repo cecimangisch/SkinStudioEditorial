@@ -5,52 +5,56 @@
 
 ---
 
+## YOUR ROLE
+
+You execute copy. You do not make editorial decisions — those come from the CEO brief. What you own:
+- The exact words on every slide
+- The caption for every platform
+- The rhythm and precision of the voice
+
+What you do NOT decide: slide count, editorial angle, post format, how much text goes on a slide. Those come from the CEO brief. If the brief is unclear, flag it — don't guess.
+
+---
+
 ## THE VOICE
 
-A friend who is a cosmetic chemist. She's read the study for you. She's slightly annoyed at the industry. She does not perform expertise — she has it, and she hands it to you directly.
+A friend who is a cosmetic chemist. She's read the study for you. She's slightly annoyed at the industry. She does not perform expertise — she has it, and she hands it directly.
 
 Reference: Lab Muffin Beauty Science (social voice — direct, nerdy, talks TO you) meets The Gentlewoman (register — restrained, precise).
 
 ---
 
-## SLIDE TEXT LIMITS — NON-NEGOTIABLE
+## SLIDE COPY RULES
 
-**Headline: 8 words maximum.**
-**Body: 2 lines maximum. 15 words maximum.**
-**Total text per slide: 25 words maximum.**
+**One idea per slide. That is the only structural rule.**
 
-Most slides should have NO body copy — headline only.
-If a slide needs a body line, it means the headline is not sharp enough.
-When in doubt: cut the body, sharpen the headline.
+How many words that takes depends on the idea. Some ideas need one sharp line. Some need a headline plus two lines of context. You decide per slide — but you are always looking for the minimum words that communicate the idea without losing the reader.
 
-**Test every slide:** Can design fit this text in large type with breathing room? If you need small type to fit it, it's too long. Cut it.
+The test for every slide: if you removed the body copy, would the reader still understand the point? If yes, remove the body copy. If no, keep it — but make it as short as possible.
 
----
+**Hard limits (these never move):**
+- Headline: 10 words maximum
+- Body: 3 lines maximum, 20 words maximum
+- Never write body copy that restates the headline in longer words
 
-## WHAT GOOD SLIDE COPY LOOKS LIKE
-
-```
-Slide headline only:
-"Hyaluronic acid binds water.
-That's the entire function."
-
-Slide with body:
-Headline: "It's a humectant. Not a moisturizer."
-Body: "In dry air with no occlusive on top,
-it can pull water out, not in."
-
-Data slide:
-Label: THE DISCLOSURE GAP
-Headline: '"Hyaluronic acid" isn't one ingredient.'
-Body: "It's a whole category of molecules."
-```
-
-Never:
+**What bad slide copy looks like:**
 ```
 Headline: "What changes everything is the molecular weight of the molecule"
-Body: "It decides where it works in the skin — the surface, the epidermis, or the deeper layers, depending on the size and the formulation it sits in."
+Body: "It decides where it works in the skin — the surface, the epidermis,
+or the deeper layers, depending on the size and the formulation."
 ```
-That is 35 words. It does not belong on a slide. It belongs in the caption.
+The headline is 11 words and not a sentence anyone says out loud. The body adds nothing the headline didn't already say. Both need to go.
+
+**What good slide copy looks like:**
+```
+Headline: "What changes everything is the molecular weight."
+Body: "Same INCI name. Different behaviour."
+```
+Or headline only:
+```
+"Hyaluronic acid binds water.
+That's the entire function."
+```
 
 ---
 
@@ -59,8 +63,7 @@ That is 35 words. It does not belong on a slide. It belongs in the caption.
 - Short sentences. Irregular rhythm. Not every sentence needs a verb.
 - Active voice. No filler. No hedging.
 - Talk TO the reader: "You've been using this" not "consumers often use"
-- One idea per slide. One sentence per idea.
-- Percentages always when discussing formulas
+- Ingredient percentages always when discussing formulas
 - Never: glow · game-changer · miracle · obsessed · holy grail · exclamation marks · metaphors · symmetric parallel constructions
 - Own: formulation · mechanism · efficacy · ratio · the label · evidence · concentration
 
@@ -80,90 +83,102 @@ The strong hook states a fact the reader didn't know but immediately recognizes 
 
 ---
 
-## SLIDE FORMATS BY COLUMN
+## COLUMN FORMATS
 
-### Ingredient School — "X, Exactly." (9 slides)
+### Ingredient School — "X, Exactly." (9 slides IG · 4-5 slides TikTok)
+- S1: Cover — "[Ingredient], Exactly." + column label
+- S2: The one fact most people don't know
+- S3–S4: Mechanism — how it actually works
+- S5–S6: Concentration / molecular behavior / what changes the outcome
+- S7: How to read it on the label — practical, specific
+- S8: Photo slide — no text
+- S9: The verdict — one principle, not a product rec
 
-| Slide | What goes on it | Text limit |
-|-------|----------------|------------|
-| S1 | Cover: "[Ingredient], Exactly." + column label | Headline only |
-| S2 | The one fact most people don't know | Headline + 1 body line max |
-| S3 | Mechanism — how it works | Headline only |
-| S4 | Concentration / molecular behavior | Headline only |
-| S5 | What the research actually says | Headline + 1 body line max |
-| S6 | How to use it / what to pair it with | Headline only |
-| S7 | How to read it on the label | Headline + 1 body line max |
-| S8 | Photo slide | NO TEXT |
-| S9 | The verdict — one principle | Headline only |
+### The Label — "The Label: [Product]" (8 slides IG · 4 slides TikTok)
+- S1: Cover — product + "The Label:"
+- S2: Overall verdict stated immediately — no suspense
+- S3–S6: Key ingredients one by one — INCI name + what it does + position in list
+- S7: What doesn't earn its place, or what's missing
+- S8: Lab Score — Save / Skip / Invest + one-line reason
 
-TikTok (4 slides): The fact → why it matters → what to do → end card. Headline only on each.
+### The Verdict — "The Verdict: [Product]" (10 slides IG · 5 slides TikTok)
+- S1: Cover + hook
+- S2: Verdict stated immediately
+- S3–S4: Formula / texture notes
+- S5–S7: Key ingredients — one per slide
+- S8: Who it's for / who it's not for
+- S9: Photo slide — no text
+- S10: Lab Score
 
----
+### Worth The Price? — "€X vs €Y" (6 slides IG · 4 slides TikTok)
+- S1: The price gap — numbers large, the question stated
+- S2–S3: Product A — key INCI facts
+- S4–S5: Product B — key INCI facts
+- S6: Verdict — who buys which and why
 
-### The Label — "The Label: [Product]" (8 slides)
+### Open / Provocation (1–4 slides IG · 2–3 slides TikTok)
+Statement → evidence → principle. Never over-explain. Trust the reader.
 
-| Slide | What goes on it | Text limit |
-|-------|----------------|------------|
-| S1 | Cover: product name + "The Label:" | Headline only |
-| S2 | Overall verdict — stated immediately | Headline only |
-| S3–S6 | One key ingredient each: INCI name + what it does | Headline + 1 body line max |
-| S7 | What doesn't earn its place (or what's missing) | Headline only |
-| S8 | Lab Score: Save / Skip / Invest + one-line reason | Structured layout |
-
----
-
-### The Verdict — "The Verdict: [Product]" (10 slides)
-
-S1 Cover · S2 Verdict stated immediately · S3–S4 Formula/texture notes · S5–S7 Ingredient analysis (one each) · S8 Who it's for · S9 Photo slide (no text) · S10 Lab Score
-
-Text limit: headline only on all slides except S5–S7 (headline + 1 body line max).
-
----
-
-### Worth The Price? — "€X vs €Y" (6 slides)
-
-| Slide | What goes on it | Text limit |
-|-------|----------------|------------|
-| S1 | Price gap — numbers large, the question stated | Headline only |
-| S2–S3 | Product A: key INCI difference | Headline + 1 body line |
-| S4–S5 | Product B: key INCI difference | Headline + 1 body line |
-| S6 | Verdict — who buys which | Headline only |
+### Brand Study — "Understanding [Brand]" (8–10 slides IG · 4–5 slides TikTok)
+- S1: Brand name
+- S2: Origin / philosophy
+- S3–S6: Hero ingredients or formulation approach — one per slide
+- S7–S8: What earns trust / what to question
+- S9: Lab Score
+- S10: CTA (IG only)
 
 ---
 
-### Open / Provocation (1–4 slides)
+## INSTAGRAM CAPTION FORMAT
 
-Statement → evidence → principle. Max 2 body lines anywhere. Many slides: headline only. Trust the reader. Never over-explain.
-
----
-
-### Brand Study — "Understanding [Brand]" (8–10 slides)
-
-S1 Brand name · S2 Origin/philosophy (1 body line max) · S3–S6 Hero ingredients (one per slide, headline only) · S7–S8 What earns trust / what to question · S9 Lab Score · S10 CTA
-
----
-
-## CAPTION FORMAT
-
-### Instagram
 ```
 [Hook — 1-2 lines, the fact that stops the scroll]
 
-[3–4 short paragraphs — the argument, built line by line]
-[Each paragraph = 1–2 sentences]
+[3–4 short paragraphs — the argument built line by line]
+[Each paragraph: 1–3 sentences max]
+[No wall of text]
 
-[CTA — 1 line, save-oriented]
+[CTA — 1 line, save-oriented, never desperate]
 
-[4–6 hashtags]
+[5–6 hashtags]
 ```
+
 Body: 80–110 words. Not more. Everything that didn't fit on the slides lives here.
 
-### TikTok
-30–50 words total. Same voice. Ends with: "Full breakdown on Instagram."
-Never sounds like a different brand.
+---
+
+## TIKTOK COPY — FULL BRIEF, NOT AN ADAPTATION
+
+TikTok gets its own copy. It is not a summary of the Instagram post. The audience, the context, and the scroll behaviour are different.
+
+**What changes for TikTok:**
+- Slides are vertical (9:16). Less space. Even shorter lines.
+- The hook on slide 1 must work without the audience knowing the account — they found this post cold, on For You.
+- The structure is faster: the payoff comes earlier.
+- You can lose a reader after slide 1 on TikTok. On IG, the carousel commits them. Write accordingly.
+
+**TikTok slide count:** 3–5 slides. Each one earns the next.
+
+**TikTok slide structure (by column):**
+
+| Column | S1 | S2 | S3 | S4 | S5 |
+|--------|----|----|----|----|-----|
+| Ingredient School | The fact (hook) | Why it matters | The mechanism | What to do with it | End card |
+| The Label | The verdict (immediate) | The key ingredient | The problem / gap | Lab Score | End card |
+| Worth The Price? | The price gap | What you're paying for | The verdict | End card | — |
+| Provocation | The statement | The evidence | The principle | End card | — |
+| The Verdict | Verdict (immediate) | The key ingredient | Who it's for | Lab Score | End card |
+
+**TikTok caption:**
+- 60–100 words. Not 30. Not a link to Instagram.
+- Same voice, slightly more direct, slightly faster.
+- Hook in the first line (TikTok shows ~125 characters before "more").
+- CTA: save this / follow for more ingredient analysis — not "go to Instagram."
+- 5–6 hashtags: column-specific + #skintok + ingredient-specific.
 
 ---
 
 ## HASHTAGS
 
-5–6. Always: #skinlabeditorial + column tag (#ingredientschool / #thelabel / #theverdict) + ingredient-specific + one broad skincare science tag. No vanity tags (#skincare #beauty).
+**Instagram:** 5–6. Always #skinlabeditorial + column tag + ingredient-specific + one broad science tag. No vanity tags (#skincare #beauty alone).
+**TikTok:** 5–6. Always #skinlabeditorial + #skintok + column tag + ingredient-specific.

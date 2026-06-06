@@ -38,7 +38,10 @@ Receive a content brief and orchestrate the full editorial team. You are the edi
 ## BRIEF FORMAT FOR EACH TEAM MEMBER
 Each brief is 3-5 sentences maximum. Name the editorial problem to solve, not the format to fill.
 
-Always end with: **"The one thing this content must make the audience FEEL is: ___"**
+Always specify:
+- **Platforms:** Instagram only / TikTok only / Both — Instagram and TikTok get separate copy briefs, not one adapted from the other
+- **Slide density:** how much text per slide fits the editorial register of this specific post (a provocation post is sparse; an Ingredient School slide can carry more)
+- **The one thing this content must make the audience FEEL:** ___
 
 Then:
 ```
