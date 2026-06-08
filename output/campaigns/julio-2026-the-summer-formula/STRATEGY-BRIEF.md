@@ -20,117 +20,93 @@ This campaign treats summer skin science the way a good magazine treats any tech
 
 ## WHAT THE SEASON ACTUALLY DOES TO SKIN BIOLOGY
 
-The following are the mechanistic topics this campaign covers. Every post must connect to at least one of these:
+Every post in this campaign connects to at least one of the following mechanistic realities:
 
-1. **UV radiation load** — UVA1 penetrates dermis, photodegrades collagen cross-links, drives photooxidation of melanin. UVB damages DNA in keratinocytes. Both require filter coverage. The mechanism matters — not just the SPF number.
+1. **UV radiation load** — UVA1 penetrates the dermis, photodegrades collagen cross-links, drives photooxidation of melanin. UVB damages DNA in keratinocytes. Both require filter coverage. The mechanism matters — not just the SPF number.
 
-2. **Barrier function in heat and humidity** — Increased transepidermal water loss (TEWL) in heat is counterintuitive (it feels humid, but the skin loses more water). Ceramide depletion accelerates in UV-exposed skin. The barrier-summer relationship is under-documented in consumer content.
+2. **Barrier function in heat and humidity** — Increased transepidermal water loss (TEWL) in heat is counterintuitive: it feels humid, but the skin loses more water. Ceramide depletion accelerates in UV-exposed skin. The barrier-summer relationship is under-documented in consumer content.
 
-3. **Ingredient photostability** — Vitamin C (ascorbic acid) oxidises rapidly on UV exposure. Retinol requires careful positioning in a summer routine. Not all actives behave the same under summer conditions. This is a formulation story, not a scare story.
+3. **Ingredient photostability** — Vitamin C (ascorbic acid) oxidises on UV exposure. Retinol requires careful positioning in a summer routine. Not all actives behave the same under summer conditions. This is a formulation story, not a scare story.
 
-4. **pH and microbiome shifts** — Sweat is slightly acidic. Excess sweat disrupts skin surface pH (normally 4.5–5.5), which affects the acid mantle and the resident microbiome. A minor but real factor in summer skin reactivity.
+4. **pH and microbiome shifts** — Sweat is slightly acidic. Excess sweat disrupts skin surface pH (normally 4.5–5.5), affecting the acid mantle and the resident microbiome. A minor but real factor in summer skin reactivity.
 
-5. **Concentration decisions in summer** — Which actives to adjust, when, and why. Evidence-based, not trend-based.
+5. **Concentration and compliance** — Which actives to adjust, when, and why. And whether the SPF number on the bottle reflects real-world protection — or just lab conditions.
 
 ---
 
 ## NARRATIVE ARC — WEEK BY WEEK
 
-### Week 1 (Jun 18–20): The Protection Layer
-*What the barrier is, what summer does to it, and what mineral protection means when formulated well.*
+### Week 1 (Jun 18–22): The Protection Layer
+*What the barrier is, what mineral protection means, and what summer UV actually does.*
 
-Jun 18: The Label — Altruist Mineral SPF 50. Full INCI audit of the most discussed accessible mineral sunscreen in the EU. A concrete anchor post: here is a specific product, here is what is in it, here is what the evidence says.
+Anchor post: The Label — Altruist Mineral SPF 50 (IG, Jun 18). Full INCI audit of the most-discussed accessible mineral sunscreen in the EU. Concrete, evidence-based.
 
-Jun 20: Open/Provocation — Barrier in summer. A short, precise challenge to the idea that "summer skin is oily skin." The barrier is compromised by UV, not moisturised by humidity. Three slides. High save and share target.
+TikTok opens independently with the SPF math provocation (Fri Jun 19) — built for cold FYP. No IG equivalent needed. Sunday (Jun 21) TikTok brings niacinamide's summer-specific mechanism to a FYP audience that may not follow the IG account.
 
-### Week 2 (Jun 23–27): The Formula Problem
-*Price, photostability, and the chemical UV filter conversation.*
+### Week 2 (Jun 23–28): The Formula Problem
+*Price, photostability, niacinamide, and the chemical UV filter conversation.*
 
-Jun 23: Worth The Price? — €8 SPF vs €45 SPF. The formulation comparison that this account is built for. Not a ranking — an analysis. The outcome: compliance is the variable that determines protection, not the number on the bottle.
+IG: Worth The Price? SPF (Tue Jun 23) → Ingredient School Niacinamide (Thu Jun 25) → The Verdict Anthelios (Sat Jun 27).
+TikTok runs parallel but differently: SPF price comparison (Mon Jun 23) → barrier provocation (Wed Jun 25) → Anthelios verdict (Fri Jun 27) → ceramide UV mechanism (Sun Jun 28) → routine myth (Mon Jun 29).
 
-Jun 25: Ingredient School — Niacinamide, Exactly. Niacinamide in summer has a specific mechanism story: it reduces the transfer of melanosomes from melanocytes to keratinocytes, which is directly relevant to post-UV hyperpigmentation. This is the summer application of an ingredient many readers already know.
-
-Jun 27: The Verdict — La Roche-Posay Anthelios Invisible Fluid SPF 50+. The most-recommended sunscreen in dermatology circles, evaluated rigorously. PR_FLAG: YES. This post earns institutional credibility and demonstrates that our verdicts include limitations even for well-regarded products.
-
-### Week 3 (Jun 30–Jul 4): The Barrier Closes
+### Week 3 (Jun 30–Jul 5): The Barrier Closes
 *Ceramides, routine architecture, and label analysis of a workhorse product.*
 
-Jun 30/Jul 1: Ingredient School — Ceramides, Exactly. Why ceramides are the most important barrier ingredient for UV-damaged skin. The mechanism: ceramides form the mortar between corneocytes. UV disrupts the lipid bilayer. This is the science behind why "damaged barrier" is a real and measurable condition, not a marketing term.
-
-Jul 2: Open/Provocation — The routine myth. Short provocation challenging the idea that summer requires a different routine. The truth: it requires attention to what UV exposure actually changes, not a product swap.
-
-Jul 4: The Label — CeraVe Moisturising Lotion AM (SPF 30). A workhorse product with a complicated INCI list. The Label format does its audit. The verdict will be nuanced — SPF 30 is not sufficient for all use cases.
+IG: Ceramides Ingredient School (Wed Jul 1) → Routine Myth provocation (Thu Jul 2) → The Label CeraVe AM (Sat Jul 4).
+TikTok: Ceramides (Wed Jul 1) → Vitamin C photostability provocation (Sun Jul 6).
 
 ### Week 4 (Jul 7–11): The Price Problem + Brand Authority
-*Vitamin C pricing, the Medik8 brand study, and the campaign close.*
+*Vitamin C stability, Typology brand transparency, and the campaign close.*
 
-Jul 7: Worth The Price? — Vitamin C (€15 vs €65). Ascorbic acid versus ascorbyl glucoside versus L-AA stabilised in different formulations. The price question in vitamin C has a real answer: it depends entirely on formulation stability, not brand prestige.
-
-Jul 9: Brand Study — Typology. A French DTC brand with exceptional ingredient transparency, publicly available formulation reasoning, and EU manufacturing. This is the brand study that earns us credibility with ingredient-literate readers — it covers a brand that explicitly refuses to sell noise.
-
-Jul 11: Open/Provocation — Campaign close. "The best anti-aging product is SPF." A short, precise, data-anchored provocation to close the campaign arc. Everything we've covered — UV damage, filter science, barrier function — lands here as a single editorial conclusion.
+IG: Worth The Price? Vitamin C (Tue Jul 7) → Brand Study Typology (Thu Jul 9) → SPF anti-aging close (Sat Jul 11).
+TikTok mirrors but leads: Vitamin C (Mon Jul 7) → Typology (Wed Jul 9) → anti-aging close (Fri Jul 11).
 
 ---
 
 ## BRAND STUDY SELECTION: TYPOLOGY
 
-**Rationale for choosing Typology (over The INKEY List, Bioderma, SVR, Avène):**
+**Typology (Paris, est. 2019).** Selected over The INKEY List, Bioderma, SVR, and Avène.
 
-- French DTC brand, Paris-based, founded 2019. Fully EU-available, strong in France, Spain, Germany, Benelux.
-- Explicitly ingredient-first positioning — they publish their formulation philosophy, concentration rationale, and sourcing.
-- Clean INCI lists with concentration transparency (rare in the market).
-- Not yet heavily covered by English-language editorial — editorial opportunity.
+**Rationale:**
+- French DTC brand, fully EU-available (France, Spain, Germany, Benelux).
+- Explicitly ingredient-first positioning — they publish their formulation philosophy and concentration rationale. Rare.
+- Clean INCI lists with concentration transparency.
+- Not yet heavily covered by English-language editorial.
 - Price point (mid-range, €12–28) makes their formulation choices editorially interesting: how do you achieve concentration honesty at a non-luxury price?
-- Avène and Bioderma are pharmacy staples — their brand stories are less interesting editorially because they operate within dermatological convention. Typology operates *as* an editorial brand, which makes the Brand Study column format a direct comparison.
-- The INKEY List was considered but is more UK-centric. Typology's French roots and pan-European DTC operation make it the stronger EU editorial pick.
+- Avène and Bioderma operate within dermatological convention — less interesting editorially. Typology operates *as* an editorial brand.
+- The INKEY List is more UK-centric; Typology's pan-European DTC operation is the stronger EU editorial pick.
 
-*Note: Medik8 has already been planned in the pre-existing calendar (post 12). Typology replaces it as the Jun/Jul Brand Study, repositioned to Jul 9.*
+*Note: The previous calendar planned a Medik8 brand study. Medik8 is a strong formulator but is UK-headquartered, premium-positioned, and less interesting as a transparency story for a European ingredient-literate audience. Typology replaces it.*
 
 ---
 
-## TOPIC COVERAGE — WHAT THIS PHASE COMPLETES
+## TOPIC COVERAGE — JUN 18 TO JUL 11
 
-### Ingredients covered in Jun 18 – Jul 11:
-- Zinc oxide / titanium dioxide (via The Label: Altruist — in the flow from week 2 of the campaign)
-- Niacinamide (Ingredient School — summer application angle)
+### Ingredients covered:
+- Zinc oxide / titanium dioxide (The Label: Altruist — week 1 anchor)
+- Niacinamide (Ingredient School + TikTok summer angle)
+- Chemical UV filters — Mexoryl SX, Tinosorb S, avobenzone (The Verdict: Anthelios)
 - Ceramides (Ingredient School — barrier science)
 - Vitamin C / ascorbic acid / ascorbyl glucoside (Worth The Price? — stability angle)
-- Mexoryl SX, Tinosorb S, avobenzone (via The Verdict: Anthelios)
-- Hyaluronic acid, SPF, zinc oxide (already covered in pre-Jun-18 posts — do not repeat as primary subject)
 
-### Angles covered:
-- Label audits (x2: Altruist, CeraVe AM)
-- Price comparison (x2: SPF, Vitamin C)
-- Ingredient School depth (x2: Niacinamide, Ceramides)
-- Brand transparency study (x1: Typology)
-- Thought leadership / myth (x2: Barrier summer, Routine myth)
-- Campaign close provocation (x1: SPF as anti-aging)
-- The Verdict (x1: Anthelios)
+### Already covered — do not repeat as primary subject:
+- Hyaluronic acid (Jun 11 IG post)
+- Zinc oxide as primary subject (Jun 16 IG post)
+- SPF math as a pure provocation (Jun 13 IG post)
+- La Roche-Posay as brand (The Verdict: Anthelios covers the product, not a brand study)
 
 ---
 
-## COLUMN MIX TARGET vs ACTUAL (Jun 18 – Jul 11)
+## COLUMN MIX — JUN 18 TO JUL 11
 
-| Column | Target % | Posts Planned | Actual % |
-|--------|----------|---------------|----------|
-| Ingredient School | 20% of 40% depth | 2 | 18% |
-| The Label | 20% of 40% depth | 2 | 18% |
-| The Verdict | 20% reviews | 1 | 9% |
-| Worth The Price? | — | 2 | 18% |
-| Brand Study | 15% thought leadership | 1 | 9% |
-| Open/Provocation | 15% myth + 10% provocation | 3 | 27% |
-
-Mix skews slightly toward provocation — deliberate choice for the campaign close. The depth content (Ingredient School + The Label) remains the backbone.
-
----
-
-## WHAT TO AVOID
-
-- **No US-only brands.** All products must be available in EU markets.
-- **No La Roche-Posay Brand Study.** La Roche-Posay already featured in The Verdict (Jun 27) and Worth The Price? context — do not add another standalone brand study.
-- **No repeat ingredient primaries.** Hyaluronic acid (Jun 11) and zinc oxide (Jun 16) are already covered. Do not reopen as primary subjects.
-- **No seasonal aesthetics framing.** No "summer routine," "summer glow," "summer skin." The mechanism is the frame.
-- **No brand studies of already-covered brands.** Altruist covered in The Label — exclude from Brand Study column.
+| Column | Target | IG Posts | TikTok Posts | Notes |
+|--------|--------|----------|--------------|-------|
+| Ingredient School | 40% depth | 2 | 2 | Niacinamide + Ceramides |
+| The Label | 40% depth | 2 | 1 | Altruist + CeraVe AM |
+| The Verdict | 20% reviews | 1 | 1 | Anthelios |
+| Worth The Price? | virality/saves | 2 | 2 | SPF + Vitamin C |
+| Brand Study | thought leadership | 1 | 1 | Typology |
+| Open/Provocation | reach/follows | 3 | 6 | TikTok primary for provocation |
 
 ---
 
@@ -139,29 +115,42 @@ Mix skews slightly toward provocation — deliberate choice for the campaign clo
 ### Instagram
 - Authority platform. Carousel saves are the primary success metric.
 - Ingredient School, The Label, The Verdict: primary home.
-- Feed grid coherence is a requirement — tile types must maintain the 6-post cycle.
-- Caption length: 80–110 words body. Hook + body + CTA + 5–6 hashtags.
+- Feed grid coherence: maintain 6-post cycle (Cover/Lab Sage → Texture/Bone → Data/Ink → Skin/Petal → Texture/Bone → Cover/Lab Sage).
+- Caption: 80–110 words body. Hook + body + CTA + 5–6 hashtags.
+- Best slots: Tue/Thu 09:00–11:00 CET · Sat/Sun 19:00 CET.
 
 ### TikTok
 - Reach and follows are the primary metrics. FYP cold audience logic.
 - Worth The Price? and Open/Provocation: TikTok is PRIMARY.
-- TikTok posts are NOT adaptations of IG posts. They are written for a different first-contact moment.
+- TikTok posts are written for a cold first-contact moment — NOT adaptations of IG posts.
 - Caption: 60–100 words. Hook in first line. 5–6 hashtags. Native CTA.
 - Photo Mode: 3–5 slides. Slide 1 must land as a standalone hook.
-- TikTok-exclusive posts: 4–5 per week. Some will have IG equivalents; some will not.
+- Best slots: Mon/Wed/Fri 19:00–21:00 CET · Sun 18:00 CET.
 
 ---
 
-## VOICE REMINDERS (FOR ALL AGENTS)
+## WHAT TO AVOID
+
+- No US-only brands. All products must be EU-available.
+- No La Roche-Posay brand study (featured in The Verdict).
+- No repeat ingredient primaries (HA, zinc oxide already covered).
+- No seasonal aesthetics framing — no "summer routine," "summer glow," "summer skin."
+- No brand studies of already-covered brands.
+- No exclamation marks, no metaphors, no symmetric parallel constructions.
+- No: glow · miracle · game-changer · holy grail.
+- Own: formulation · mechanism · efficacy · ratio · the label · evidence · concentration.
+
+---
+
+## VOICE REMINDERS (ALL AGENTS)
 
 - Direct, precise, slightly annoyed at the industry.
 - Never performing expertise — having it.
-- Never: glow · miracle · game-changer · holy grail · exclamation marks · metaphors · symmetric parallel constructions
-- Own: formulation · mechanism · efficacy · ratio · the label · evidence · concentration
 - Ship test: does it read as a publication, or as an advertisement? Always the former.
 
 ---
 
-*Strategy Brief v1.0 — The Summer Formula Phase 2*
+*Strategy Brief v2.0 — The Summer Formula*
 *Period: June 18 – July 11, 2026*
 *Author: Content Strategist*
+*Updated: June 6, 2026 — dual-platform edition*
