@@ -31,7 +31,7 @@ Instagram and TikTok run parallel editorial tracks — not the same content adap
 
 | # | Date | Day | Time (CET) | Platform | Column | Topic | Slides | PR_FLAG | DIST_FLAG | IG Equiv? |
 |---|------|-----|------------|----------|--------|-------|--------|---------|-----------|-----------|
-| 01 | Jun 18 | Thu | 10:00 | Instagram | The Label | Altruist Mineral SPF 50 | 8 | YES | NO | — |
+| 01 | Jun 18 | Thu | 10:00 | Instagram | The Label | Colorescience Total Protection No-Show Mineral SPF 50 | 8 | YES | NO | — |
 | 02 | Jun 19 | Fri | 20:00 | TikTok | Open/Provocation | SPF 30 vs SPF 50: the math | 3 | NO | NO | NO |
 | 03 | Jun 20 | Sat | 19:00 | Instagram | Open/Provocation | Barrier in summer | 3 | NO | NO | — |
 | 04 | Jun 21 | Sun | 18:00 | TikTok | Ingredient School | Niacinamide + UV: the transfer mechanism | 4 | NO | NO | Partial (IG is deeper) |
@@ -62,7 +62,7 @@ Instagram and TikTok run parallel editorial tracks — not the same content adap
 
 | # | Date | Time | Column | Topic | Slides | Grid Tile | Objective | PR_FLAG | DIST_FLAG |
 |---|------|------|--------|-------|--------|-----------|-----------|---------|-----------|
-| IG-01 | Thu Jun 18 | 10:00 | The Label | Altruist Mineral SPF 50 | 8 | Data/Ink | Save | YES | NO |
+| IG-01 | Thu Jun 18 | 10:00 | The Label | Colorescience Total Protection No-Show Mineral SPF 50 | 8 | Data/Ink | Save | YES | NO |
 | IG-02 | Sat Jun 20 | 19:00 | Open/Provocation | Barrier in summer | 3 | Skin/Petal | Share + Follow | NO | NO |
 | IG-03 | Tue Jun 23 | 10:00 | Worth The Price? | SPF €8 vs €45 | 6 | Texture/Bone | Save + Share | NO | YES |
 | IG-04 | Thu Jun 25 | 10:00 | Ingredient School | Niacinamide, Exactly | 9 | Cover/Lab Sage | Save | NO | NO |
