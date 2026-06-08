@@ -1,0 +1,1789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skin Lab Editorial · Copy Viewer · The Summer Formula</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bone: #F5F0E8;
+    --ink: #1A1A18;
+    --sage: #BBD1C6;
+    --mist: #DAE9DF;
+    --frost: #ECF0EE;
+    --linen: #F1EAE1;
+    --cloud: #FAFAFA;
+    --petal: #E6D2D0;
+    --sidebar-w: 300px;
+    --topbar-h: 52px;
+  }
+
+  html, body {
+    height: 100%;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    background: var(--bone);
+    color: var(--ink);
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  /* TOP BAR */
+  #topbar {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: var(--topbar-h);
+    background: var(--ink);
+    color: var(--bone);
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    gap: 12px;
+    z-index: 200;
+    letter-spacing: 0.03em;
+  }
+  #topbar .brand {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--bone);
+  }
+  #topbar .sep { color: var(--sage); font-size: 12px; }
+  #topbar .subtitle {
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--sage);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  #topbar .campaign-name {
+    font-size: 12px;
+    color: #888;
+    margin-left: auto;
+    font-style: italic;
+  }
+  #hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--bone);
+    font-size: 20px;
+    cursor: pointer;
+    padding: 4px 8px;
+    line-height: 1;
+  }
+
+  /* LAYOUT */
+  #layout {
+    display: flex;
+    height: 100vh;
+    padding-top: var(--topbar-h);
+  }
+
+  /* SIDEBAR */
+  #sidebar {
+    width: var(--sidebar-w);
+    min-width: var(--sidebar-w);
+    background: var(--ink);
+    overflow-y: auto;
+    position: fixed;
+    top: var(--topbar-h);
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    scrollbar-width: thin;
+    scrollbar-color: #333 var(--ink);
+  }
+  #sidebar::-webkit-scrollbar { width: 4px; }
+  #sidebar::-webkit-scrollbar-track { background: var(--ink); }
+  #sidebar::-webkit-scrollbar-thumb { background: #333; }
+
+  .week-group { padding: 16px 0 8px; }
+  .week-label {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #555;
+    padding: 0 18px 8px;
+  }
+  .post-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 18px;
+    cursor: pointer;
+    transition: background 0.15s;
+    border-left: 3px solid transparent;
+  }
+  .post-item:hover { background: rgba(255,255,255,0.05); }
+  .post-item.active {
+    background: rgba(187,209,198,0.12);
+    border-left-color: var(--sage);
+  }
+  .post-item.published .post-date::after {
+    content: ' ·';
+    color: var(--sage);
+  }
+  .post-meta { flex: 1; min-width: 0; }
+  .post-date {
+    font-size: 11px;
+    color: #666;
+    font-weight: 400;
+  }
+  .post-title {
+    font-size: 12.5px;
+    color: var(--bone);
+    font-weight: 400;
+    line-height: 1.4;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .post-item.active .post-title { color: var(--sage); }
+  .platform-badge {
+    flex-shrink: 0;
+    font-size: 13px;
+    margin-top: 1px;
+    opacity: 0.7;
+  }
+  .published-tag {
+    display: inline-block;
+    font-size: 9px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    background: rgba(187,209,198,0.2);
+    color: var(--sage);
+    padding: 1px 5px;
+    border-radius: 3px;
+    margin-top: 2px;
+  }
+
+  /* MAIN */
+  #main {
+    margin-left: var(--sidebar-w);
+    flex: 1;
+    padding: 36px 40px 60px;
+    max-width: 860px;
+    min-height: 100%;
+  }
+
+  #welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    text-align: center;
+    gap: 16px;
+  }
+  #welcome h1 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 28px;
+    font-weight: 300;
+    color: var(--ink);
+  }
+  #welcome p {
+    font-size: 14px;
+    color: #888;
+    max-width: 360px;
+  }
+
+  /* POST VIEW */
+  #post-view { display: none; }
+
+  .post-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 28px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(26,26,24,0.12);
+  }
+  .post-header-left {}
+  .post-heading-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+    flex-wrap: wrap;
+  }
+  .meta-chip {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 4px;
+    background: var(--mist);
+    color: var(--ink);
+  }
+  .meta-chip.platform-ig { background: var(--petal); }
+  .meta-chip.platform-tiktok { background: var(--frost); }
+  .meta-chip.published { background: var(--sage); color: var(--ink); }
+  .post-main-title {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.3;
+    color: var(--ink);
+    margin-bottom: 4px;
+  }
+  .post-slide-count {
+    font-size: 12px;
+    color: #888;
+  }
+  .copy-all-btn {
+    background: var(--ink);
+    color: var(--bone);
+    border: none;
+    padding: 10px 18px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.15s;
+    white-space: nowrap;
+  }
+  .copy-all-btn:hover { background: #333; }
+  .copy-all-btn.copied { background: #2d6a4f; color: #fff; }
+
+  /* SLIDES */
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #999;
+    margin: 32px 0 12px;
+  }
+
+  .slide-card {
+    background: var(--cloud);
+    border: 1px solid rgba(26,26,24,0.08);
+    border-radius: 6px;
+    padding: 20px 20px 16px;
+    margin-bottom: 12px;
+    position: relative;
+  }
+  .slide-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+  .slide-number {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--sage);
+  }
+  .slide-label-tag {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #999;
+    background: var(--mist);
+    padding: 2px 7px;
+    border-radius: 3px;
+  }
+  .copy-btn {
+    background: none;
+    border: 1px solid rgba(26,26,24,0.15);
+    color: #888;
+    padding: 4px 10px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.15s;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .copy-btn:hover { background: var(--mist); border-color: var(--sage); color: var(--ink); }
+  .copy-btn.copied { background: #d4edda; border-color: #2d6a4f; color: #2d6a4f; }
+
+  .slide-headline {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.4;
+    margin-bottom: 8px;
+    color: var(--ink);
+  }
+  .slide-body {
+    font-size: 14px;
+    line-height: 1.65;
+    color: #444;
+  }
+  .slide-body p { margin-bottom: 6px; }
+  .slide-body p:last-child { margin-bottom: 0; }
+
+  /* CAPTION */
+  .caption-card {
+    background: var(--ink);
+    border-radius: 6px;
+    padding: 24px 24px 20px;
+    margin-bottom: 12px;
+    position: relative;
+  }
+  .caption-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+  }
+  .caption-platform-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--sage);
+  }
+  .caption-card .copy-btn {
+    border-color: rgba(187,209,198,0.3);
+    color: rgba(187,209,198,0.7);
+  }
+  .caption-card .copy-btn:hover {
+    background: rgba(187,209,198,0.1);
+    border-color: var(--sage);
+    color: var(--sage);
+  }
+  .caption-text {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--bone);
+    white-space: pre-wrap;
+  }
+
+  /* MOBILE */
+  #mobile-nav {
+    display: none;
+    position: fixed;
+    top: var(--topbar-h);
+    left: 0; right: 0;
+    background: var(--ink);
+    z-index: 150;
+    padding: 8px 16px 12px;
+    border-bottom: 1px solid #333;
+  }
+  #mobile-select {
+    width: 100%;
+    background: #222;
+    color: var(--bone);
+    border: 1px solid #444;
+    padding: 8px 12px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  #sidebar-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 99;
+  }
+
+  @media (max-width: 768px) {
+    #sidebar { transform: translateX(-100%); transition: transform 0.2s; }
+    #sidebar.open { transform: translateX(0); }
+    #sidebar-overlay.open { display: block; }
+    #hamburger { display: block; }
+    #main { margin-left: 0; padding: 20px 20px 40px; }
+    .post-header { flex-direction: column; }
+    .copy-all-btn { width: 100%; text-align: center; }
+    .post-main-title { font-size: 18px; }
+  }
+
+  /* keyboard focus */
+  .post-item:focus { outline: 2px solid var(--sage); outline-offset: -2px; }
+  button:focus-visible { outline: 2px solid var(--sage); outline-offset: 2px; }
+</style>
+</head>
+<body>
+
+<div id="topbar">
+  <button id="hamburger" onclick="toggleSidebar()" aria-label="Toggle navigation">☰</button>
+  <span class="brand">Skin Lab Editorial</span>
+  <span class="sep">·</span>
+  <span class="subtitle">Copy Viewer</span>
+  <span class="sep">·</span>
+  <span class="subtitle">The Summer Formula</span>
+  <span class="campaign-name">Jun 8 – Jul 11, 2026</span>
+</div>
+
+<div id="sidebar-overlay" onclick="toggleSidebar()"></div>
+
+<div id="layout">
+  <nav id="sidebar" aria-label="Posts navigation"></nav>
+  <main id="main">
+    <div id="welcome">
+      <h1>The Summer Formula</h1>
+      <p>Select a post from the sidebar to view its copy.</p>
+    </div>
+    <div id="post-view"></div>
+  </main>
+</div>
+
+<script>
+// ─── DATA ───────────────────────────────────────────────────────────────────
+
+const POSTS = [
+  {
+    id: "00a",
+    date: "Jun 8",
+    dateSort: "2026-06-08",
+    platform: "IG",
+    column: "Open / Provocation",
+    title: "Stop Buying Skincare For The Wrong Reasons",
+    published: true,
+    slides: [
+      {
+        label: null,
+        headline: "Stop Buying Skincare For The Wrong Reasons",
+        body: "Footer: SKIN LAB EDITORIAL"
+      },
+      {
+        label: "THE PROBLEM",
+        headline: "The industry is selling you feelings, not a formula.",
+        body: "Most marketing is designed at the exact point where judgment is weakest: emotion and insecurity.\n\nClinical aesthetics. Before & afters.\n\nAll of it built to bypass a simpler question: What are the ingredients actually doing?"
+      },
+      {
+        label: "THE PRINCIPLE",
+        headline: "Start with mechanism, not marketing.",
+        body: "Before you buy anything, ask yourself: what is this doing at a biological level, and is that what my skin needs.\n\nThat question cuts through everything else."
+      },
+      {
+        label: "WHY THIS ACCOUNT EXISTS",
+        headline: "We read the label. You make the call.",
+        body: "Every formulation we analyse starts with the INCI list, not the campaign.\n\nEvery claim we assess starts with evidence, not endorsement.\n\nYou are an educated reader. We treat you like one."
+      }
+    ],
+    caption_ig: "The industry knows exactly when to sell to you.\n\nAfter a bad skin day. After a reel that made you feel like you're missing something. After a \"dermatologist approved\" claim that means nothing legally.\n\nThe mechanism is always the same: bypass critical thinking, reach the feeling.\n\nWe are not here to tell you what to buy. We are here to make the question easier to answer. Every formulation we look at starts with the INCI list. Every claim we assess starts with evidence. Not aesthetic packaging. Not who's recommending it.\n\nRead the label. Then decide.\n\nFollow if that's useful to you.\n\n#ingredientscience #skincareeducation #inci #formulationanalysis #skincareingredients #evidencebasedskincare"
+  },
+  {
+    id: "00b",
+    date: "Jun 8",
+    dateSort: "2026-06-08",
+    platform: "TikTok",
+    column: "Open / Provocation",
+    title: "Stop Buying Skincare For The Wrong Reasons",
+    published: true,
+    slides: [
+      {
+        label: null,
+        headline: "You are not buying skincare.\n\nYou are buying a story about skincare.",
+        body: "Footer: SKIN LAB EDITORIAL"
+      },
+      {
+        label: "THE PROBLEM",
+        headline: "Most of what you see is not designed to inform you.",
+        body: "It is designed to make you act before you think.\n\nClinical packaging. \"Dermatologist tested.\" Before & after photos.\n\nNone of this answers the real question: What does this ingredient actually do?"
+      },
+      {
+        label: "THE PRINCIPLE",
+        headline: "Start here instead:",
+        body: "Mechanism. Not marketing.\n\nWhat is this doing in the skin and do I actually need that function?"
+      },
+      {
+        label: null,
+        headline: "This is why Skin Lab Editorial exists.",
+        body: "We read the label.\nYou decide.\n\nYou are an educated consumer. We treat you like one."
+      }
+    ],
+    caption_tiktok: "You are not buying skincare. You are buying a story about skincare.\n\nThe question that cuts through all of it: what is this ingredient doing at a biological level, and do I actually need that function.\n\nThat's the only question that matters. Everything else is packaging.\n\n#skincarescience #ingredientscience #skincareamyths #inci #skintok #evidencebasedskincare"
+  },
+  {
+    id: "00c",
+    date: "Jun 11",
+    dateSort: "2026-06-11",
+    platform: "IG",
+    column: "Ingredient School",
+    title: "Hyaluronic Acid, Decoded.",
+    published: true,
+    slides: [
+      {
+        label: "INGREDIENT SCHOOL",
+        headline: "Hyaluronic Acid, Decoded.",
+        body: null
+      },
+      {
+        label: "THE DISCLOSURE GAP",
+        headline: "Did you know that \"hyaluronic acid\" isn't one ingredient?",
+        body: "It's a whole category of molecules, not a single one."
+      },
+      {
+        label: null,
+        headline: "[Visual pause — editorial breath between concept slides]",
+        body: null
+      },
+      {
+        label: "DENSITY",
+        headline: "What changes everything is the molecular weight.",
+        body: "It decides where it works: Surface. Epidermis. Deeper layers.\n\nSame INCI name. Different behavior."
+      },
+      {
+        label: "THE MECHANISM",
+        headline: "Hyaluronic acid binds water.",
+        body: "That's the entire function.\n\nEverything else depends on size."
+      },
+      {
+        label: "HOW TO USE IT",
+        headline: "It's a humectant. Not a moisturizer.",
+        body: "It pulls water toward itself and behaves differently depending on environment and formulation.\n\nIn dry air, with no occlusive on top, it can increase water loss from deeper layers."
+      },
+      {
+        label: "DIFFERENCES",
+        headline: "Same molecule, different behaviour.",
+        body: "HIGH MOLECULAR WEIGHT: Surface · Forms a hydration film · Strong evidence · Immediate hydration\n\nLOW MOLECULAR WEIGHT: Epidermis · Penetrates · Emerging evidence · Deeper hydration"
+      },
+      {
+        label: null,
+        headline: "[Visual pause]",
+        body: null
+      },
+      {
+        label: "ON THE LABEL",
+        headline: "\"Hydrolyzed\" usually signals a smaller molecular weight.",
+        body: "Search for this in the label if you want low molecular weight.\n\nPosition in the INCI list matters too. Higher up = higher concentration. An HA listed eighth out of fifteen is present, but it is not the hero ingredient regardless of what the front of the packaging claims."
+      },
+      {
+        label: "LAB SCORE",
+        headline: "Lab Score: Save",
+        body: "HA is one of the most evidence-backed humectants available. It works. But molecular weight is rarely disclosed on packaging, and expensive serums do not perform better than budget ones with the same formulation architecture. Buy a product that lists HA in the top third of the INCI, pairs it with an occlusive, and tells you something about molecular weight — or at least uses the word \"hydrolyzed.\" Price is not a proxy for efficacy here."
+      }
+    ],
+    caption_ig: "Hyaluronic acid is not one ingredient. It is a category.\n\nMost labels won't tell you which version you're getting. But the INCI list will — if you know what to look for. Molecular weight determines where in the skin HA works, and \"hydrolyzed\" on the label usually means smaller molecules, which penetrate further.\n\nThe evidence for surface-level HA is strong and well-established. For low-molecular-weight penetration: emerging, not conclusive. Both are useful. Neither requires an expensive product.\n\nWhat to look for: HA listed in the top third of the INCI. An occlusive in the same formulation. The word \"hydrolyzed\" if you want deeper-layer delivery.\n\nWhat to ignore: the marketing copy on the front of the bottle.\n\n#hyaluronicacid #ingredientscience #inci #skincarescience #formulationanalysis #humectant #skincareeducation #evidencebasedskincare"
+  },
+  {
+    id: "01",
+    date: "Jun 18",
+    dateSort: "2026-06-18",
+    platform: "IG",
+    column: "The Label",
+    title: "The Label: Colorescience Total Protection No-Show Mineral SPF 50",
+    published: false,
+    slides: [
+      {
+        label: "THE LABEL",
+        headline: "Colorescience Total Protection No-Show Mineral SPF 50.",
+        body: "Four claims. Here's what the formula actually supports."
+      },
+      {
+        label: "THE VERDICT",
+        headline: "The mineral protection is real. The pollution claim needs context.",
+        body: null
+      },
+      {
+        label: "THE ACTIVES",
+        headline: "Zinc Oxide 10% + Titanium Dioxide 8%.",
+        body: "Both UV filters. Both mineral. Broad spectrum UVA + UVB. This part is accurate."
+      },
+      {
+        label: "HOW IT WORKS",
+        headline: "The \"no-show\" isn't magic. It's iron oxides.",
+        body: "Iron oxides (CI 77491, CI 77492, CI 77499) absorb the wavelengths that make white cast visible. They also give the formula its tint range."
+      },
+      {
+        label: "THE BLUE LIGHT CLAIM",
+        headline: "Iron oxides do absorb blue light. The evidence is there.",
+        body: "Studies show iron oxides reduce blue light transmission by 90%+. The claim is supported — not just marketing."
+      },
+      {
+        label: "THE POLLUTION CLAIM",
+        headline: "\"Pollution defense\" is the weakest claim in this formula.",
+        body: "The antioxidants present (Vitamin C derivative, Niacinamide) do support barrier defense. But no topical SPF has demonstrated pollution protection in controlled conditions. The physical barrier helps. The claim overstates it."
+      },
+      {
+        label: "ON THE LABEL",
+        headline: "What works: filters, iron oxides, antioxidant support.",
+        body: "What to question: \"pollution defense\" as a discrete function. The formula is strong. The language goes further than the evidence."
+      },
+      {
+        label: "LAB SCORE",
+        headline: "Lab Score: INVEST",
+        body: "This is a genuinely mineral, genuinely invisible, genuinely broad-spectrum formula. The iron oxide technology solves the white cast problem without compromising filter efficacy. At this price point you are paying for real formulation work — not branding. If invisible mineral SPF is the brief, this earns the price."
+      }
+    ],
+    caption_ig: "Most mineral SPFs leave a white cast. This one doesn't. The chemistry behind that is worth understanding.\n\nColorescience Total Protection No-Show uses zinc oxide (10%) and titanium dioxide (8%) as its actives — both mineral, genuinely broad spectrum. The \"no-show\" comes from iron oxides in the formula: they absorb the visible wavelengths that cause white cast, and they happen to be the same pigments that provide blue light absorption. That claim is supported by the evidence.\n\nThe pollution defense claim is where the formula overreaches. There are antioxidants present — a Vitamin C derivative, Niacinamide — that support skin resilience. But no topical SPF has been shown to provide discrete pollution protection in controlled conditions. The physical barrier helps. The marketing language goes further than the data does.\n\nFilters, iron oxide technology, antioxidant support: all solid. Lab Score: Invest — if invisible mineral is the brief, the formulation justifies the price.\n\n#thelabel #ingredientscience #mineralspf #zincoxide #spfeveryday #skinlabeditorial"
+  },
+  {
+    id: "02",
+    date: "Jun 19",
+    dateSort: "2026-06-19",
+    platform: "TikTok",
+    column: "Open / Provocation",
+    title: "SPF 30 vs SPF 50: The Math",
+    published: false,
+    slides: [
+      {
+        label: null,
+        headline: "SPF 30 blocks 97% of UVB.\nSPF 50 blocks 98% of UVB.",
+        body: "The difference is 1%."
+      },
+      {
+        label: null,
+        headline: "What SPF measures.",
+        body: "SPF = how much more UV is needed to burn your skin. SPF 30: 30x more UV. SPF 50: 50x more UV. Real-world protection difference: 1 percentage point."
+      },
+      {
+        label: null,
+        headline: "What actually determines protection.",
+        body: "How much you apply.\nHow often you reapply.\nWhether you cover all exposed skin.\n\nThe number on the bottle is secondary to all three."
+      }
+    ],
+    caption_tiktok: "SPF 30 blocks 97% of UVB. SPF 50 blocks 98%. The difference is 1%.\n\nMost people assume SPF 50 provides roughly twice the protection of SPF 30. That is not how the scale works. SPF measures the ratio of UV dose needed to cause sunburn — not a linear percentage improvement.\n\nWhat actually determines protection: how much product you apply, how often you reapply, and whether you cover all exposed skin.\n\nThe number matters less than the habit.\n\n@skinlabeditorial · Ingredients, decoded.\n\n#spfscience #sunscreenmath #spf50 #skinscience #ingredientscience #skinlabeditorial"
+  },
+  {
+    id: "03",
+    date: "Jun 20",
+    dateSort: "2026-06-20",
+    platform: "IG",
+    column: "Open / Provocation",
+    title: "Your Skin Isn't Oilier in Summer. The Barrier Is More Compromised.",
+    published: false,
+    slides: [
+      {
+        label: null,
+        headline: "Your skin isn't oilier in summer.",
+        body: "The barrier is more compromised."
+      },
+      {
+        label: null,
+        headline: "What UV does to the barrier.",
+        body: "UV degrades ceramides in the stratum corneum. Less ceramide means more transepidermal water loss — regardless of ambient humidity."
+      },
+      {
+        label: null,
+        headline: "The mechanism, summarised.",
+        body: "Summer skin feels oily. Summer skin is also ceramide-depleted. These are different mechanisms. The response to one does not address the other."
+      }
+    ],
+    caption_ig: "Your summer skin isn't oilier. The barrier is more compromised.\n\nUV radiation accelerates ceramide degradation in the stratum corneum. Ceramides are the lipid molecules that form the barrier — and when UV depletes them, transepidermal water loss increases regardless of how humid the air feels.\n\nThe perceived oiliness is sebum production responding to heat. The actual structural problem is a compromised lipid bilayer. These are different mechanisms. The response to one does not address the other.\n\nSummer skin needs barrier support. Not necessarily lighter products.\n\n#barrierfunction #ceramides #spfscience #skinsciencefacts #ingredientscience #skinlabeditorial"
+  },
+  {
+    id: "04",
+    date: "Jun 21",
+    dateSort: "2026-06-21",
+    platform: "TikTok",
+    column: "Open / Provocation",
+    title: "Niacinamide + UV: The Transfer Mechanism",
+    published: false,
+    slides: [
+      {
+        label: null,
+        headline: "Niacinamide doesn't stop pigmentation.",
+        body: "It stops the transfer."
+      },
+      {
+        label: null,
+        headline: "What it actually does.",
+        body: "Melanin forms in melanocytes. It moves to keratinocytes — that is what becomes visible pigmentation. Niacinamide inhibits that transfer, not the melanin production itself."
+      },
+      {
+        label: null,
+        headline: "Why summer matters here.",
+        body: "UV increases melanosome production. More production means more transfer events. Niacinamide's mechanism is most relevant when UV load is highest — which is summer."
+      },
+      {
+        label: null,
+        headline: "The practical note.",
+        body: "Niacinamide addresses the transfer. SPF addresses the UV stimulus. Both. Neither replaces the other."
+      }
+    ],
+    caption_tiktok: "Niacinamide doesn't stop pigmentation forming. It stops the transfer to the surface layer of skin.\n\nMelanin is produced in melanocytes — that part niacinamide doesn't touch. What it inhibits is the transport of melanosomes from melanocytes to keratinocytes. That is the mechanism. That is what becomes visible pigmentation.\n\nSummer relevance: UV radiation increases melanosome production. Niacinamide is most effective when that transfer rate is highest.\n\nSPF addresses the UV stimulus. Niacinamide addresses the transfer. These are different mechanisms. Both matter.\n\n@skinlabeditorial · Ingredients, decoded.\n\n#niacinamide #ingredientscience #skinscience #pigmentation #spfscience #skinlabeditorial"
+  },
+  {
+    id: "05",
+    date: "Jun 23",
+    dateSort: "2026-06-23",
+    platform: "TikTok",
+    column: "Worth The Price?",
+    title: "Worth The Price? SPF €8 vs €45",
+    published: false,
+    slides: [
+      {
+        label: null,
+        headline: "We compared an €8 SPF and a €45 SPF.",
+        body: "The difference isn't protection."
+      },
+      {
+        label: null,
+        headline: "Both use Tinosorb S and Tinosorb M.",
+        body: "Broad-spectrum. EU-approved. Photostable.\nThe filters are not the variable."
+      },
+      {
+        label: null,
+        headline: "Anthelios adds silica.",
+        body: "It controls sebum and reduces whitening.\nThat is what the premium buys — texture, not efficacy."
+      },
+      {
+        label: null,
+        headline: "Compliance is the real variable.",
+        body: "A sunscreen you stop wearing at midday\ndoesn't protect you from midday UV."
+      },
+      {
+        label: null,
+        headline: "Altruist: €8. Adequate filters. Less elegant.\nAnthelios: €45. Same filters. Wears better.",
+        body: "The protection is equal. The experience is not."
+      }
+    ],
+    caption_tiktok: "We compared the INCI lists of an €8 and a €45 SPF. The UV filters are essentially the same.\n\nBoth Altruist SPF 50 and La Roche-Posay Anthelios use Tinosorb S and Tinosorb M — broad-spectrum, photostable, EU-approved. The protection mechanism is identical.\n\nWhat the premium buys: silica for sebum control, a lighter film, better mid-day wearability. That is a real difference. It is a compliance difference — not a formulation superiority.\n\nIf you wear the €8 SPF all day, it works. If you stop reapplying the €45 because it costs too much to use generously — it doesn't.\n\nRead the label. Choose accordingly.\n\n@skinlabeditorial · Ingredients, decoded.\n\n#spfscience #sunscreenreview #worthit #ingredientscience #altruist #anthelios #skinlabeditorial"
+  },
+  {
+    id: "06",
+    date: "Jun 23",
+    dateSort: "2026-06-23b",
+    platform: "IG",
+    column: "Worth The Price?",
+    title: "Worth The Price? SPF €8 vs €45",
+    published: false,
+    slides: [
+      {
+        label: null,
+        headline: "Altruist SPF 50: €8. Anthelios SPF 50+: €45.",
+        body: "The UV filters are equivalent.\nThe difference is texture."
+      },
+      {
+        label: null,
+        headline: "Both formulas use Tinosorb S and Tinosorb M.",
+        body: "Broad-spectrum. Photostable. EU-approved. Identical mechanism."
+      },
+      {
+        label: null,
+        headline: "Anthelios adds Mexoryl SX and Mexoryl XL —",
+        body: "Two additional filters for extended UVA1 coverage.\nIt also contains silica for sebum control."
+      },
+      {
+        label: null,
+        headline: "Silica is the functional difference.",
+        body: "It reduces the greasy film that makes people\nstop reapplying at midday."
+      },
+      {
+        label: null,
+        headline: "Compliance is the protection variable.",
+        body: "If the €8 SPF sits on your face all day — it works.\nIf the €45 SPF disappears mid-afternoon because it wears better — so does it."
+      },
+      {
+        label: null,
+        headline: "Neither is wrong.",
+        body: "The question is: which one do you actually wear?\nRead the label. Make that decision."
+      }
+    ],
+    caption_ig: "Altruist SPF 50 costs €8. La Roche-Posay Anthelios costs €45. The UV filters are not meaningfully different.\n\nBoth formulas use Tinosorb S and Tinosorb M — broad-spectrum, photostable, EU-approved UV filters. Anthelios adds Mexoryl SX and XL for extended UVA1 coverage, plus silica for sebum absorption. That silica is where the premium goes. It changes how the formula wears — lighter, drier, less likely to migrate.\n\nThe compliance argument: a sunscreen that disappears at midday because it feels heavy stops protecting at midday. If the more expensive formula improves compliance, the price differential has a real-world case. That is not a reason to dismiss the €8 option — it is a reason to understand why the €45 one exists.\n\nProtection efficacy: equivalent. Cosmetic experience: meaningfully different. Choose based on how you actually behave with each one.\n\n#spfscience #sunscreenreview #worthit #ingredientscience #altruist #anthelios #skinlabeditorial"
+  },
+  {
+    id: "07",
+    date: "Jun 25",
+    dateSort: "2026-06-25",
+    platform: "TikTok",
+    column: "Open / Provocation",
+    title: "Barrier vs Oily: Your Skin Isn't Producing More Oil",
+    published: false,
+    slides: [
+      {
+        label: null,
+        headline: "Your skin isn't oilier in summer.\nThe barrier is compromised.",
+        body: null
+      },
+      {
+        label: null,
+        headline: "UV and heat deplete the stratum corneum lipid matrix.",
+        body: "A depleted barrier triggers compensatory sebum production.\nYour skin is responding to damage — not producing more oil."
+      },
+      {
+        label: null,
+        headline: "The fix is repair, not control.",
+        body: "Stripping oil removes the response.\nIt does not address what caused it."
+      }
+    ],
+    caption_tiktok: "Your skin isn't producing more oil in summer. It is responding to barrier damage.\n\nUV radiation and heat deplete the lipid matrix of the stratum corneum. When barrier integrity drops, transepidermal water loss increases. The skin's response to that: compensatory sebum production. It is a defense mechanism, not a skin type.\n\nTreating summer oiliness as an excess production problem — with mattifying products, alcohol toners, aggressive acids — addresses the response while leaving the cause intact. The result is a cycle: strip, compensate, strip again.\n\nThe mechanism requires repair. Ceramide replenishment. Reduced friction. SPF that doesn't require heavy removal.\n\n@skinlabeditorial · Ingredients, decoded.\n\n#barrierrepair #oilyskin #skinscience #skintips #ingredientscience #skinlabeditorial"
+  },
+  {
+    id: "08",
+    date: "Jun 25",
+    dateSort: "2026-06-25b",
+    platform: "IG",
+    column: "Ingredient School",
+    title: "Niacinamide, Exactly.",
+    published: false,
+    slides: [
+      {
+        label: "INGREDIENT SCHOOL",
+        headline: "Niacinamide, Exactly.",
+        body: "The ingredient the market oversells.\nThe evidence is more interesting than the marketing."
+      },
+      {
+        label: null,
+        headline: "It is Vitamin B3.",
+        body: "Water-soluble. Stable in heat and light.\nWorks at multiple layers of skin function simultaneously."
+      },
+      {
+        label: "MECHANISM ONE",
+        headline: "Melanin transfer.",
+        body: "UV increases the rate at which melanocytes transfer melanosomes to keratinocytes. Niacinamide slows that transfer."
+      },
+      {
+        label: "MECHANISM TWO",
+        headline: "Sebum regulation.",
+        body: "It reduces sebaceous gland activity.\nNot stripping — modulation at the cellular level."
+      },
+      {
+        label: "MECHANISM THREE",
+        headline: "Barrier support.",
+        body: "It stimulates ceramide and fatty acid synthesis.\nLess TEWL. Better barrier integrity."
+      },
+      {
+        label: "THE CONCENTRATION REALITY",
+        headline: "5% is where the clinical evidence sits.",
+        body: "10% is a positioning number, not a clinical threshold."
+      },
+      {
+        label: "STABILITY ADVANTAGE",
+        headline: "Vitamin C degrades in heat and light.\nNiacinamide does not.",
+        body: "In summer, it is the more reliable active."
+      },
+      {
+        label: null,
+        headline: "It pairs well with SPF.",
+        body: "No photosensitivity. No increased UV sensitivity.\nApply in the morning. Combine with a broad-spectrum filter."
+      },
+      {
+        label: "THE VERDICT",
+        headline: "Look for 5% on the label.",
+        body: "Anything higher adds cost, not necessarily efficacy."
+      }
+    ],
+    caption_ig: "Niacinamide is one of the most marketed ingredients in skincare. It is also one of the most misrepresented.\n\nThe clinical evidence is built on 5% concentration. The jump to 10% is a market convention — the evidence for additional benefit above 5% is not well-established.\n\nWhat the research does support: inhibition of melanosome transfer (relevant in summer, when UV increases transfer rate), sebum modulation at cellular level, ceramide synthesis stimulation, and reduced TEWL. Three separate mechanisms. All documented.\n\nIn summer specifically: stability matters. Unlike Vitamin C, niacinamide does not degrade in heat or UV exposure. It works when conditions are difficult for other actives.\n\nRead the label. Look for 5%. Combine with SPF.\n\nSave this for the next time someone tries to sell you 10%.\n\n#niacinamide #ingredientschool #skinscience #spfsummer #skincareingredients #skinlabeditorial"
+  },
+  {
+    id: "09",
+    date: "Jun 27",
+    dateSort: "2026-06-27",
+    platform: "TikTok",
+    column: "The Verdict",
+    title: "The Verdict: La Roche-Posay Anthelios Invisible Fluid SPF 50+",
+    published: false,
+    slides: [
+      {
+        label: null,
+        headline: "The most recommended sunscreen in dermatology.",
+        body: "Here's what the formula actually says."
+      },
+      {
+        label: null,
+        headline: "Filter system: Tinosorb S + Mexoryl SX + Mexoryl XL.",
+        body: "Mexoryl XL covers UVA1 — the deepest UV range.\nMost SPFs do not reach it."
+      },
+      {
+        label: null,
+        headline: "Silica controls sebum without stripping.",
+        body: "Pericarp extract adds antioxidant function.\nThe film is lightweight. Reapplication is realistic."
+      },
+      {
+        label: "LAB SCORE",
+        headline: "Lab Score: INVEST.",
+        body: "Best-in-class UVA1 coverage. Evidence-backed filter system.\nThe reputation is earned by the formula."
+      }
+    ],
+    caption_tiktok: "La Roche-Posay Anthelios is the most dermatologist-recommended SPF in Europe. That reputation gets repeated constantly. The formula behind it gets explained almost never.\n\nThe key differentiator is Mexoryl XL — a filter that covers UVA1, the deepest UV wavelength range. Most broad-spectrum SPFs stop short of UVA1. This one doesn't.\n\nThe rest of the formula supports compliance: silica for sebum control, a lightweight film, an antioxidant fraction from pericarp extract. A sunscreen you can wear all day.\n\nLab Score: INVEST — not because of the brand, because of what's in the bottle.\n\nFull INCI breakdown on Instagram today.\n\n@skinlabeditorial · Ingredients, decoded.\n\n#anthelios #spfreview #sunscreenscience #mexoryl #uvprotection #skinlabeditorial"
+  },
+  {
+    id: "10",
+    date: "Jun 27",
+    dateSort: "2026-06-27b",
+    platform: "IG",
+    column: "The Verdict",
+    title: "The Verdict: La Roche-Posay Anthelios Invisible Fluid SPF 50+",
+    published: false,
+    slides: [
+      {
+        label: "THE VERDICT",
+        headline: "Anthelios Invisible Fluid SPF 50+\nThe most recommended. Now, the most audited.",
+        body: null
+      },
+      {
+        label: null,
+        headline: "INCI order tells you what the formula prioritizes.",
+        body: "Aqua first. Then Alcohol Denat.\nThen the filters — at concentrations that matter."
+      },
+      {
+        label: null,
+        headline: "Four UV filters. Working in combination.",
+        body: "Homosalate. Octocrylene. Drometrizole Trisiloxane.\nTerephthalylidene Dicamphor Sulfonic Acid."
+      },
+      {
+        label: null,
+        headline: "Drometrizole Trisiloxane is Mexoryl XL.",
+        body: "It covers UVA1 — the deepest UV wavelength range.\nMost SPFs do not reach UVA1. This one does."
+      },
+      {
+        label: null,
+        headline: "Terephthalylidene Dicamphor Sulfonic Acid is Mexoryl SX.",
+        body: "UVA2 and the UVA/UVB bridge.\nTogether, Mexoryl SX + XL cover the full UVA spectrum."
+      },
+      {
+        label: null,
+        headline: "Phenylbenzimidazole Sulfonic Acid reinforces UVB coverage.",
+        body: "Octocrylene stabilises the system.\nThe filter combination is engineered, not assembled."
+      },
+      {
+        label: null,
+        headline: "Silica: sebum absorption without stripping.",
+        body: "Dimethicone: slip and film formation.\nGlycerin: hydration during wear."
+      },
+      {
+        label: null,
+        headline: "Butyl Methoxydibenzoylmethane (Avobenzone) adds UVA depth.",
+        body: "Pericarp extract contributes antioxidant function.\nMinor actives. Meaningful additions."
+      },
+      {
+        label: null,
+        headline: "What you are paying for.",
+        body: "Not brand reputation. Not the packaging.\nUVA1 coverage. Full-spectrum photostability. Wear quality."
+      },
+      {
+        label: "LAB SCORE",
+        headline: "Lab Score: INVEST.",
+        body: "Best-in-class UVA1 coverage. Evidence-backed system.\nThe formula earns the recommendation."
+      }
+    ],
+    caption_ig: "La Roche-Posay Anthelios gets recommended constantly. Its formula gets explained almost never. This is the INCI audit.\n\nThe key differentiator is Mexoryl XL — Drometrizole Trisiloxane — which provides UVA1 protection. UVA1 is the deepest UV wavelength range. It contributes to both tanning and photoaging. Most broad-spectrum SPFs, including many marketed as high-protection, do not cover it. This one does.\n\nPaired with Mexoryl SX for the UVA2-UVB bridge, stabilised by Octocrylene, supported by silica for sebum control and a film-forming system that makes reapplication realistic.\n\nLab Score: INVEST. Not because of the brand. Because of what's in the formula that others typically omit.\n\nIf you are going to spend €45 on a sunscreen, this is why this one earns it.\n\n#anthelios #spfreview #sunscreenscience #mexoryl #ingredientscience #skinlabeditorial"
+  },
+  {
+    id: "11",
+    date: "Jun 28",
+    dateSort: "2026-06-28",
+    platform: "TikTok",
+    column: "Ingredient School",
+    title: "UV and Ceramides",
+    published: false,
+    slides: [
+      {
+        label: null,
+        headline: "UV doesn't just tan you.",
+        body: "It degrades the lipid layer holding your skin together."
+      },
+      {
+        label: null,
+        headline: "The stratum corneum is 50% ceramides.",
+        body: "UV radiation reduces ceramide synthesis\nand degrades the lipids already there."
+      },
+      {
+        label: null,
+        headline: "Lower ceramides: higher TEWL.",
+        body: "The barrier becomes more permeable.\nMoisture escapes. Irritants enter."
+      },
+      {
+        label: null,
+        headline: "SPF prevents further degradation.",
+        body: "It does not rebuild what was lost.\nThat requires ceramide replenishment."
+      }
+    ],
+    caption_tiktok: "Most people think of UV damage as a surface event — burning, tanning, redness. The structural damage is less visible and more significant.\n\nUV radiation (specifically UVB) reduces ceramide synthesis in the stratum corneum and degrades existing lipids in the lipid matrix. Ceramides make up approximately 50% of the stratum corneum. When that fraction drops, barrier integrity drops with it. TEWL increases. The skin becomes more reactive to temperature, product ingredients, and environmental change.\n\nSPF is essential — but it prevents further degradation. It does not replenish what UV has already removed. That requires a different intervention.\n\nFull ceramide breakdown coming to Instagram this week.\n\n@skinlabeditorial · Ingredients, decoded.\n\n#ceramides #barrierrepair #uvdamage #skinscience #spf #skinlabeditorial"
+  },
+  {
+    id: "12",
+    date: "Jun 29",
+    dateSort: "2026-06-29",
+    platform: "TikTok",
+    column: "Open / Provocation",
+    title: "The Summer Routine Myth",
+    published: false,
+    slides: [
+      {
+        label: null,
+        headline: "You don't need a different summer routine.",
+        body: "You need to understand what UV changes."
+      },
+      {
+        label: null,
+        headline: "UV degrades Vitamin C. Heat affects formulation stability.",
+        body: "Sweat changes how products adhere.\nThe conditions change. Not the product category."
+      },
+      {
+        label: null,
+        headline: "The summer routine edit is a marketing format.",
+        body: "Understanding is the actual intervention.\nSave this instead of buying the edit."
+      }
+    ],
+    caption_tiktok: "Every June, the summer skincare routine edit appears. New moisturiser. Lighter serum. Summer-specific SPF. A new set of products for a new season.\n\nWhat summer actually changes: UV increases active ingredient degradation (Vitamin C oxidises faster). Heat affects formulation stability. Sweat alters product adhesion. These are real variables — but they affect how your existing products perform, not what product category you need.\n\nThe \"summer routine\" as a distinct purchase event is a marketing construct. The skincare industry benefits from seasonal reinvention. Your skin does not require it.\n\nWhat it does require: understanding the conditions. And adjusting accordingly.\n\n@skinlabeditorial · Ingredients, decoded.\n\n#skincareroutine #summerroutine #skinscience #skintips #ingredientscience #skinlabeditorial"
+  },
+  {
+    id: "13",
+    date: "Jul 1",
+    dateSort: "2026-07-01",
+    platform: "TikTok",
+    column: "Ingredient School",
+    title: "Ceramides",
+    published: false,
+    slides: [
+      {
+        label: null,
+        headline: "Ceramides are the mortar between skin cells.\nUV dissolves the mortar.",
+        body: null
+      },
+      {
+        label: null,
+        headline: "They are sphingolipids. 50% of the stratum corneum.",
+        body: "UV reduces synthesis and degrades existing lipids.\nThe barrier loses structural integrity."
+      },
+      {
+        label: null,
+        headline: "Lower ceramides: higher TEWL.",
+        body: "Your skin becomes more reactive,\nmore sensitive, and slower to recover."
+      },
+      {
+        label: "ON THE INCI",
+        headline: "Look for Ceramide NP.",
+        body: "Most studied. Most documented.\nAlso: Ceramide AP and Ceramide EOP."
+      }
+    ],
+    caption_tiktok: "Ceramides are the lipid mortar between skin cells. They make up approximately 50% of the stratum corneum. UV radiation — specifically UVB — reduces ceramide synthesis and degrades the lipids already present.\n\nWhen ceramide levels drop, the barrier becomes more permeable. TEWL increases. Skin becomes more reactive to temperature, actives, and environmental stress. This is not a cosmetic problem. It is a structural one.\n\nWhat to look for on the label: Ceramide NP (the most clinically studied), Ceramide AP, Ceramide EOP. All three together is the standard for barrier-repair formulations.\n\nFull breakdown on Instagram today.\n\n@skinlabeditorial · Ingredients, decoded.\n\n#ceramides #barrierrepair #skinscience #inci #skincareingredients #skinlabeditorial"
+  },
+  {
+    id: "14",
+    date: "Jul 1",
+    dateSort: "2026-07-01b",
+    platform: "IG",
+    column: "Ingredient School",
+    title: "Ceramides, Exactly.",
+    published: false,
+    slides: [
+      {
+        label: "INGREDIENT SCHOOL",
+        headline: "Ceramides, Exactly.",
+        body: "On half of all barrier products.\nUnderstood by almost none of the people buying them."
+      },
+      {
+        label: null,
+        headline: "Ceramides are sphingolipids.",
+        body: "They form the lamellar bilayer structure\nof the stratum corneum lipid matrix."
+      },
+      {
+        label: null,
+        headline: "That structure is the barrier.",
+        body: "Not a metaphor. Not marketing.\nThe physical architecture that controls what enters and what exits."
+      },
+      {
+        label: null,
+        headline: "UV radiation reduces ceramide synthesis.",
+        body: "UVB specifically degrades existing stratum corneum lipids.\nThe barrier loses structural integrity with sun exposure."
+      },
+      {
+        label: null,
+        headline: "The consequence: increased TEWL.",
+        body: "A more permeable barrier.\nHeightened sensitivity to temperature, actives, and environment."
+      },
+      {
+        label: null,
+        headline: "Twelve ceramide types are classified in INCI.",
+        body: "CER NP is the most clinically studied.\nCER AP and CER EOP are the next most documented."
+      },
+      {
+        label: null,
+        headline: "Humectants attract water. That is hydration.\nCeramides restore the lipid structure. That is repair.",
+        body: "Both matter. They do different jobs."
+      },
+      {
+        label: "ON THE INCI",
+        headline: "Find Ceramide NP, Ceramide AP, Ceramide EOP.",
+        body: "All three together signals a formulation built for barrier function.\nOne ceramide near the bottom of the list is tokenism."
+      },
+      {
+        label: "THE VERDICT",
+        headline: "In summer, ceramide replenishment is not a winter-only concern.",
+        body: "UV depletes them. SPF prevents it. Ceramides restore it."
+      }
+    ],
+    caption_ig: "Ceramides appear on barrier creams, serums, and moisturisers across every price point. Almost no marketing explains what they are or what they actually do.\n\nThey are sphingolipids — lipid molecules that form the lamellar bilayer structure of the stratum corneum. This structure is the barrier: the physical architecture that controls transepidermal water loss and filters what enters the skin.\n\nUV radiation (specifically UVB) reduces ceramide synthesis and degrades existing lipids in the matrix. This is why summer barrier damage is a ceramide-depletion event, not just a dryness event. Humectants address hydration. They do not rebuild lipid structure. Ceramide replenishment does.\n\nWhat to look for: Ceramide NP, Ceramide AP, Ceramide EOP — ideally all three, positioned in the first half of the INCI list.\n\nSave this for the next time you read a label.\n\n#ceramides #barrierrepair #ingredientschool #skinscience #inci #skinlabeditorial"
+  },
+  {
+    id: "15",
+    date: "Jul 2",
+    dateSort: "2026-07-02",
+    platform: "IG",
+    column: "Open / Provocation",
+    title: "The Summer Routine Myth",
+    published: false,
+    slides: [
+      {
+        label: null,
+        headline: "The idea of a summer routine\nis a marketing invention.",
+        body: null
+      },
+      {
+        label: null,
+        headline: "What summer changes:",
+        body: "UV degrades actives faster.\nHeat affects formulation stability.\nSweat alters product adhesion. These are conditions, not categories."
+      },
+      {
+        label: null,
+        headline: "You don't need new products.",
+        body: "You need to understand what the conditions\ndo to the ones you already use."
+      }
+    ],
+    caption_ig: "Every year in June: the summer skincare routine edit. New textures. New formats. A seasonal product refresh framed as necessity.\n\nWhat summer actually changes is not the category of product you need — it is the conditions your existing products work in. UV increases the rate at which unstable actives degrade. Heat affects the structural integrity of some formulations. Increased sweat changes how products adhere to and penetrate the skin. These are real variables. But they are conditions to understand, not gaps to fill with new purchases.\n\nThe \"summer routine\" as a distinct buying moment exists because it generates sales. Not because your skin requires a new set of products every June.\n\nUnderstand the conditions. Adjust accordingly. Save the money.\n\n#skincareroutine #summerroutine #skintips #skinscience #ingredientscience #skinlabeditorial"
+  },
+  {
+    id: "16",
+    date: "Jul 4",
+    dateSort: "2026-07-04",
+    platform: "TikTok",
+    column: "The Label",
+    title: "The Label: CeraVe AM SPF 30",
+    published: false,
+    slides: [
+      {
+        label: "THE LABEL",
+        headline: "CeraVe AM is everywhere.",
+        body: "Here's what the INCI list actually says."
+      },
+      {
+        label: null,
+        headline: "UV filters: Homosalate, Octisalate, Octocrylene.",
+        body: "All chemical. Strong UVB coverage.\nUVA protection: functional. Not best-in-class."
+      },
+      {
+        label: null,
+        headline: "Three ceramides: CER NP, AP, EOP.",
+        body: "Present and real — but mid-list.\nThis is an SPF product that contains ceramides."
+      },
+      {
+        label: "LAB SCORE",
+        headline: "Lab Score: SAVE.",
+        body: "Best-value ceramide + SPF combination available.\nStrong for everyday use. Not a dermatological-grade sunscreen."
+      }
+    ],
+    caption_tiktok: "CeraVe AM Moisturising Lotion SPF 30 is one of the most purchased SPF products on the market. The ceramide + sunscreen positioning is everywhere. The actual formula breakdown is not.\n\nUV filter system: Homosalate, Octisalate, Octocrylene. Chemical filters, strong UVB coverage. UVA protection is adequate for daily use — not the full-spectrum coverage you get from Mexoryl or Tinosorb systems.\n\nCeramides NP, AP, and EOP are present — all three of the most documented types. They appear mid-list, which means this reads primarily as an SPF product with ceramide support. That is still good. It is not a ceramide-first formula.\n\nLab Score: SAVE. The best-value ceramide-plus-SPF combination on the market. Not a substitute for dedicated high-UV-exposure sunscreen.\n\nFull INCI audit on Instagram today.\n\n@skinlabeditorial · Ingredients, decoded.\n\n#cerave #spfreview #thelabel #ingredientscience #sunscreen #skinlabeditorial"
+  },
+  {
+    id: "17",
+    date: "Jul 4",
+    dateSort: "2026-07-04b",
+    platform: "IG",
+    column: "The Label",
+    title: "The Label: CeraVe AM SPF 30",
+    published: false,
+    slides: [
+      {
+        label: "THE LABEL",
+        headline: "CeraVe AM SPF 30\nOne of the most purchased SPF-moisturisers on the market.",
+        body: "Here is the full INCI audit."
+      },
+      {
+        label: null,
+        headline: "INCI order reflects concentration priority.",
+        body: "What appears first is present in the highest amount.\nThe UV filters appear early. That is intentional."
+      },
+      {
+        label: null,
+        headline: "Filter system: Homosalate, Octisalate, Octocrylene.",
+        body: "All chemical. All UVB-prioritised.\nStrong protection against burning wavelengths."
+      },
+      {
+        label: null,
+        headline: "UVA coverage: functional. Not full-spectrum.",
+        body: "No Mexoryl. No Tinosorb. No Avobenzone.\nAdequate for an overcast London commute. Not for extended sun exposure."
+      },
+      {
+        label: null,
+        headline: "Ceramides: CER NP, AP, EOP — all three present.",
+        body: "They appear mid-list.\nThis is an SPF product that contains ceramides, not the reverse."
+      },
+      {
+        label: null,
+        headline: "Niacinamide: present, but positioned late.",
+        body: "Sodium Hyaluronate: present for surface hydration.\nSupporting cast. Not leading actives."
+      },
+      {
+        label: null,
+        headline: "What this formula is optimised for:",
+        body: "Daily wear, accessible price, SPF + ceramide combination\nin a lightweight, non-greasy texture."
+      },
+      {
+        label: "LAB SCORE",
+        headline: "Lab Score: SAVE.",
+        body: "Best-value ceramide + SPF combination in the mass market.\nNot a substitute for high-UV-exposure sunscreen."
+      }
+    ],
+    caption_ig: "CeraVe AM is positioned as a moisturiser with SPF and ceramides. The INCI list tells a more specific story.\n\nThe UV filter system — Homosalate, Octisalate, Octocrylene — provides strong UVB coverage and functional UVA protection. It does not include Mexoryl, Tinosorb, or Avobenzone. For everyday urban use, the coverage is adequate. For beach days and extended sun exposure, it is not sufficient.\n\nThe three ceramides (NP, AP, EOP) are present and real. They sit mid-list, which means this is primarily formulated as an SPF product. The ceramide fraction supports the barrier without defining the formula.\n\nNiacinamide and Sodium Hyaluronate appear toward the end of the list — supporting actives at lower concentrations.\n\nLab Score: SAVE. The best-value ceramide-plus-SPF combination on the market. Know what it is, and what it isn't.\n\n#cerave #thelabel #spfreview #ingredientscience #sunscreen #skinlabeditorial"
+  },
+  {
+    id: "18",
+    date: "Jul 6",
+    dateSort: "2026-07-06",
+    platform: "TikTok",
+    column: "Open / Provocation",
+    title: "Vitamin C Oxidises",
+    published: false,
+    slides: [
+      {
+        label: null,
+        headline: "Vitamin C oxidises in daylight.",
+        body: "Most Vitamin C serums are already degraded\nbefore you open them."
+      },
+      {
+        label: null,
+        headline: "L-ascorbic acid — the active form — is highly unstable.",
+        body: "Heat, light, and air degrade it quickly.\nA yellowed serum has lost most of its efficacy."
+      },
+      {
+        label: null,
+        headline: "The solution isn't a better serum.",
+        body: "It is understanding what stability requires:\nlow pH, opaque packaging, stored away from light."
+      }
+    ],
+    caption_tiktok: "L-ascorbic acid is the most biologically active form of Vitamin C in skincare. It is also highly unstable. Exposure to air, heat, and UV light triggers oxidation — turning the serum yellow, then orange, then brown. At that point, the active has largely degraded.\n\nMost Vitamin C serums are sold in clear bottles, stored in bathrooms (warm, humid, light-exposed), and used over two or three months after opening. The product works as advertised in controlled conditions. Real-world storage conditions are often not that.\n\nWhat stability actually requires: pH around 3.5, opaque or airless packaging, cool and dark storage. These are formulation and packaging decisions — not marketing ones.\n\nTomorrow: €15 vs €65 Vitamin C. Which formula handles stability better.\n\n@skinlabeditorial · Ingredients, decoded.\n\n#vitaminc #ascorbicacid #skinscience #skintips #ingredientscience #skinlabeditorial"
+  },
+  {
+    id: "19",
+    date: "Jul 7",
+    dateSort: "2026-07-07",
+    platform: "TikTok",
+    column: "Worth The Price?",
+    title: "Worth The Price? Vitamin C €15 vs €65",
+    published: false,
+    slides: [
+      {
+        label: null,
+        headline: "€15 Vitamin C vs €65 Vitamin C.\nWe read both labels.",
+        body: null
+      },
+      {
+        label: null,
+        headline: "SkinCeuticals C E Ferulic: 15% L-ascorbic acid,\nVitamin E, ferulic acid. pH 3.5.",
+        body: "This combination was patented. The patent expired."
+      },
+      {
+        label: null,
+        headline: "The Ordinary: 8% L-ascorbic acid, Alpha Arbutin 2%.",
+        body: "Same mechanism. Lower concentration.\nLower price by €50."
+      },
+      {
+        label: null,
+        headline: "The difference: concentration and packaging.",
+        body: "SkinCeuticals has more L-ascorbic acid and tighter stability engineering.\nThe Ordinary achieves the mechanism at a lower dose."
+      },
+      {
+        label: null,
+        headline: "At €15, The Ordinary wins on price-to-active.\nAt €65, SkinCeuticals delivers higher concentration\nand a longer track record of research.",
+        body: null
+      }
+    ],
+    caption_tiktok: "€15 vs €65 Vitamin C. We read both INCI lists.\n\nSkinCeuticals C E Ferulic built its reputation on a specific formulation: 15% L-ascorbic acid, Vitamin E (alpha-tocopherol), and ferulic acid at pH 3.5. That combination was patented. The patent expired in 2012.\n\nThe Ordinary's formulation achieves the same mechanism — L-ascorbic acid with ferulic acid for stability — at 8% concentration and €15. Lower dose. Same mechanism. The price difference is not the formula.\n\nWhat the premium buys: higher active concentration, refined packaging engineering (stability matters at 15%), and the original research behind the combination.\n\nFor the buyer focused on mechanism at accessible price: The Ordinary is the answer. For the buyer who wants the full clinical dose: SkinCeuticals earns it.\n\nFull comparison on Instagram today.\n\n@skinlabeditorial · Ingredients, decoded.\n\n#vitaminc #skinceuticals #theordinary #worthit #ingredientscience #skinlabeditorial"
+  },
+  {
+    id: "20",
+    date: "Jul 7",
+    dateSort: "2026-07-07b",
+    platform: "IG",
+    column: "Worth The Price?",
+    title: "Worth The Price? Vitamin C €15 vs €65",
+    published: false,
+    slides: [
+      {
+        label: null,
+        headline: "Vitamin C: €15 vs €65.\nWe read both INCI lists.",
+        body: "Here is what the formulation difference actually is."
+      },
+      {
+        label: null,
+        headline: "SkinCeuticals C E Ferulic: the original formula.",
+        body: "15% L-ascorbic acid. Alpha-tocopherol (Vitamin E). Ferulic acid. pH 3.5.\nThis combination was patented. The patent expired in 2012."
+      },
+      {
+        label: null,
+        headline: "Why ferulic acid matters.",
+        body: "It doubles the photoprotective efficacy of L-ascorbic acid.\nIt also improves stability — keeping the active from oxidising."
+      },
+      {
+        label: null,
+        headline: "The Ordinary: 8% L-ascorbic acid, ferulic acid, Alpha Arbutin 2%.",
+        body: "Same mechanism. pH controlled. Different active concentration.\nAt €15, the price-to-active ratio is strong."
+      },
+      {
+        label: null,
+        headline: "What the premium purchases.",
+        body: "Higher concentration of L-ascorbic acid (15% vs 8%).\nRefined packaging for stability. Decades of clinical research behind the formulation."
+      },
+      {
+        label: null,
+        headline: "Two correct answers.",
+        body: "Budget priority: The Ordinary. Mechanism at accessible price.\nClinical dose priority: SkinCeuticals. Concentration and research legacy."
+      }
+    ],
+    caption_ig: "The SkinCeuticals C E Ferulic formula was built on a specific finding: 15% L-ascorbic acid, alpha-tocopherol, and ferulic acid at pH 3.5. Ferulic acid was key — it doubles the photoprotective efficacy of the Vitamin C and significantly improves stability against oxidation. That combination was patented. The patent expired in 2012.\n\nThe Ordinary's formulation achieves the same mechanism at 8% L-ascorbic acid and ferulic acid, for €15. The pH is controlled. The active works. The price difference is real.\n\nWhat the €50 premium buys: higher concentration (15% has more clinical documentation than 8%), packaging engineered for stability at higher L-ascorbic acid concentrations, and the research legacy of the original formulation.\n\nBoth are defensible choices. The variable is what matters to you — mechanism at accessible price, or clinical-dose with full research backing.\n\nRead the label. Choose accordingly.\n\n#vitaminc #skinceuticals #theordinary #worthit #ingredientscience #skinlabeditorial"
+  },
+  {
+    id: "21",
+    date: "Jul 9",
+    dateSort: "2026-07-09",
+    platform: "TikTok",
+    column: "Brand Study",
+    title: "Brand Study: Understanding Typology",
+    published: false,
+    slides: [
+      {
+        label: "BRAND STUDY",
+        headline: "Typology is a French brand that shows you\nthe percentage of every active ingredient.",
+        body: "That is unusual."
+      },
+      {
+        label: null,
+        headline: "Most brands list actives on packaging without concentrations.",
+        body: "Typology publishes them — on the label, on the site.\nYou know exactly what you are buying."
+      },
+      {
+        label: null,
+        headline: "Their niacinamide is 10%. Their retinol is 0.5%.",
+        body: "No fragrance by default. Clinical testing on all products.\nFormulation-first, accessible price (€10–25)."
+      },
+      {
+        label: "LAB SCORE",
+        headline: "Lab Score: WORTH STUDYING.",
+        body: "Rare transparency in an opaque category.\nSome actives at the lower end of the efficacy range — but named honestly."
+      }
+    ],
+    caption_tiktok: "Most skincare brands list active ingredients without stating their concentration. You see \"niacinamide\" on the label. You don't know if it's 2% or 10%. You're buying a marketing claim.\n\nTypology, founded in France in 2019, publishes the concentration of every active on the label and their website. Niacinamide 10%. Retinol 0.5%. Hyaluronic Acid serum. Each percentage is stated. No fragrance as default. Clinical testing across the range. Price point €10–25.\n\nThe limitation: some actives sit at the lower end of the clinically studied range. But the transparency means you can evaluate that yourself.\n\nLab Score: WORTH STUDYING. Rare in the category. Evidence-aware. Full brand study on Instagram today.\n\n@skinlabeditorial · Ingredients, decoded.\n\n#typology #brandstudy #ingredienttransparency #skinscience #cleanbeauty #skinlabeditorial"
+  },
+  {
+    id: "22",
+    date: "Jul 9",
+    dateSort: "2026-07-09b",
+    platform: "IG",
+    column: "Brand Study",
+    title: "Brand Study: Understanding Typology",
+    published: false,
+    slides: [
+      {
+        label: "BRAND STUDY",
+        headline: "Understanding Typology.",
+        body: "A French brand built on a specific premise:\nshow the buyer the concentration of every active."
+      },
+      {
+        label: null,
+        headline: "Founded in Paris, 2019.",
+        body: "The founding question: why does no brand\ntell you how much of the active you are actually getting?"
+      },
+      {
+        label: null,
+        headline: "Their answer: publish it.",
+        body: "Every active, on the label, on the website.\nNiacinamide 10%. Retinol 0.5%. Hyaluronic Acid serum — stated."
+      },
+      {
+        label: null,
+        headline: "No fragrance as default. Not as a trend — as a formulation decision.",
+        body: "Clinical testing across the full product range.\nPrice point: €10–25. Accessible. Intentional."
+      },
+      {
+        label: null,
+        headline: "What the percentages reveal.",
+        body: "Their niacinamide is at 10% — above the 5% clinical threshold.\nTheir retinol at 0.5% — mid-range. Effective for most. Not maximum dose."
+      },
+      {
+        label: null,
+        headline: "The limitation.",
+        body: "Some actives sit below the upper end of the efficacy range.\nThe transparency means you can see that — and evaluate it yourself."
+      },
+      {
+        label: null,
+        headline: "How to read Typology.",
+        body: "Look at the stated percentage. Compare to the clinical evidence.\nDecide if the dose matches your need."
+      },
+      {
+        label: "LAB SCORE",
+        headline: "Lab Score: WORTH STUDYING.",
+        body: "Rare transparency in an opaque category.\nAccessible, evidence-aware, and honest about what the formula is."
+      }
+    ],
+    caption_ig: "Typology is a French skincare brand with one unusual practice: they publish the percentage of every active ingredient on the label and their website. In a category where most brands list \"niacinamide\" without telling you whether it's 2% or 10%, this is a structural editorial choice.\n\nFounded in Paris in 2019. No fragrance as a default formulation decision. Clinical testing across the range. Price point €10–25.\n\nThe question a brand study must ask: does the transparency hold up? Largely, yes. Their niacinamide is at 10% (above the 5% clinical threshold). Their retinol at 0.5% (effective mid-range). The limitation is real: some actives sit toward the lower end of the clinically studied concentration range. But the transparency model means you can identify that yourself and make an informed decision.\n\nThat is the point of the brand.\n\nLab Score: WORTH STUDYING. Rare in the category. Evidence-aware. A model for what ingredient disclosure could look like if more brands did it.\n\n#typology #brandstudy #ingredienttransparency #skinscience #formulation #skinlabeditorial"
+  },
+  {
+    id: "23",
+    date: "Jul 11",
+    dateSort: "2026-07-11",
+    platform: "TikTok",
+    column: "Open / Provocation",
+    title: "SPF Is Anti-Aging",
+    published: false,
+    slides: [
+      {
+        label: null,
+        headline: "SPF is the best anti-aging product ever studied.\n40 years of data.",
+        body: null
+      },
+      {
+        label: null,
+        headline: "UV radiation causes approximately 80% of visible skin aging.",
+        body: "SPF prevents UV from doing that.\nNo peptide, retinol, or serum has 40 years of longitudinal data behind it."
+      },
+      {
+        label: null,
+        headline: "The anti-aging industry sells complexity.",
+        body: "The evidence points to one intervention.\nYou already know what it is."
+      }
+    ],
+    caption_tiktok: "UV radiation is responsible for approximately 80% of visible skin aging — photoaging. Wrinkles, pigmentation, loss of elasticity. The data on this is not disputed and is not recent.\n\nSPF prevents UV from reaching the skin. Forty years of longitudinal research — including cohort studies tracking photoaging outcomes in SPF users versus non-users — consistently supports SPF as the most evidence-backed intervention in the anti-aging category.\n\nNo retinol serum, no peptide complex, no \"age-defense\" formula has four decades of that specific data.\n\nThe category sells complexity because complexity generates sales. The evidence keeps pointing to the same thing.\n\n@skinlabeditorial · Ingredients, decoded.\n\n#spf #antiaging #sunscreen #skinscience #spfisantiaging #skinlabeditorial"
+  },
+  {
+    id: "24",
+    date: "Jul 11",
+    dateSort: "2026-07-11b",
+    platform: "IG",
+    column: "Open / Provocation",
+    title: "SPF Is the Only Anti-Aging Product With 40 Years of Data (Campaign Closer)",
+    published: false,
+    slides: [
+      {
+        label: null,
+        headline: "SPF is the only anti-aging product\nwith 40 years of data behind it.",
+        body: null
+      },
+      {
+        label: null,
+        headline: "UV causes approximately 80% of visible skin aging.",
+        body: "SPF prevents it. The evidence has been accumulating since the 1980s.\nNo other intervention in the category has that depth of research."
+      }
+    ],
+    caption_ig: "The anti-aging category is enormous. It is also, as a category, not especially well evidenced.\n\nSPF is the exception. UV radiation is responsible for approximately 80% of visible skin aging — photoaging: wrinkles, uneven pigmentation, loss of structural integrity. This is not contested in dermatology. Longitudinal cohort studies tracking SPF users against non-users have been running since the 1980s. The data consistently supports SPF as the most effective intervention for preventing UV-induced photoaging.\n\nNo retinol, no peptide complex, no vitamin C serum has four decades of that specific evidence.\n\nThe summer campaign ends here. The answer was in the first post.\n\n#spf #antiaging #sunscreen #skinscience #spfisantiaging #skinlabeditorial"
+  }
+];
+
+// ─── HELPERS ─────────────────────────────────────────────────────────────────
+
+function stripMarkdown(text) {
+  if (!text) return '';
+  return text
+    .replace(/\*\*(.*?)\*\*/g, '$1')
+    .replace(/\*(.*?)\*/g, '$1')
+    .replace(/#{1,6}\s+/g, '')
+    .replace(/^---+$/gm, '')
+    .replace(/`(.*?)`/g, '$1')
+    .trim();
+}
+
+function getWeek(post) {
+  const d = new Date(post.dateSort.replace(/[ab]$/, ''));
+  // group by week containing the date
+  const jan1 = new Date(d.getFullYear(), 0, 1);
+  const weekNum = Math.ceil(((d - jan1) / 86400000 + jan1.getDay() + 1) / 7);
+  // Return human-readable range
+  const monday = new Date(d);
+  monday.setDate(d.getDate() - ((d.getDay() + 6) % 7));
+  const sunday = new Date(monday);
+  sunday.setDate(monday.getDate() + 6);
+  const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  const start = `${months[monday.getMonth()]} ${monday.getDate()}`;
+  const end = `${months[sunday.getMonth()]} ${sunday.getDate()}`;
+  return `Week of ${start} – ${end}`;
+}
+
+function platformIcon(platform) {
+  return platform === 'IG' ? '📷' : '▶';
+}
+
+function platformClass(platform) {
+  return platform === 'IG' ? 'platform-ig' : 'platform-tiktok';
+}
+
+function buildSlideText(slide) {
+  let parts = [];
+  if (slide.label) parts.push(slide.label);
+  if (slide.headline) parts.push(stripMarkdown(slide.headline));
+  if (slide.body) parts.push(stripMarkdown(slide.body));
+  return parts.join('\n\n');
+}
+
+function buildFullText(post) {
+  let parts = [];
+  parts.push(post.title);
+  parts.push('');
+  post.slides.forEach((slide, i) => {
+    parts.push(`--- Slide ${i + 1} ---`);
+    parts.push(buildSlideText(slide));
+  });
+  if (post.caption_ig) {
+    parts.push('');
+    parts.push('--- Instagram Caption ---');
+    parts.push(stripMarkdown(post.caption_ig));
+  }
+  if (post.caption_tiktok) {
+    parts.push('');
+    parts.push('--- TikTok Caption ---');
+    parts.push(stripMarkdown(post.caption_tiktok));
+  }
+  return parts.join('\n');
+}
+
+// ─── COPY TO CLIPBOARD ───────────────────────────────────────────────────────
+
+function copyToClipboard(text, btn) {
+  navigator.clipboard.writeText(text).then(() => {
+    const original = btn.textContent;
+    btn.textContent = 'Copied ✓';
+    btn.classList.add('copied');
+    setTimeout(() => {
+      btn.textContent = original;
+      btn.classList.remove('copied');
+    }, 2000);
+  }).catch(() => {
+    // fallback
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+    const original = btn.textContent;
+    btn.textContent = 'Copied ✓';
+    btn.classList.add('copied');
+    setTimeout(() => {
+      btn.textContent = original;
+      btn.classList.remove('copied');
+    }, 2000);
+  });
+}
+
+// ─── STATE ───────────────────────────────────────────────────────────────────
+
+let activePostId = null;
+
+// ─── SIDEBAR BUILD ───────────────────────────────────────────────────────────
+
+function buildSidebar() {
+  const sidebar = document.getElementById('sidebar');
+  sidebar.innerHTML = '';
+
+  // Group by week
+  const weeks = {};
+  POSTS.forEach(post => {
+    const wk = getWeek(post);
+    if (!weeks[wk]) weeks[wk] = [];
+    weeks[wk].push(post);
+  });
+
+  Object.keys(weeks).forEach(weekLabel => {
+    const group = document.createElement('div');
+    group.className = 'week-group';
+
+    const label = document.createElement('div');
+    label.className = 'week-label';
+    label.textContent = weekLabel;
+    group.appendChild(label);
+
+    weeks[weekLabel].forEach(post => {
+      const item = document.createElement('div');
+      item.className = 'post-item' + (post.published ? ' published' : '');
+      item.setAttribute('data-id', post.id);
+      item.setAttribute('tabindex', '0');
+      item.setAttribute('role', 'button');
+      item.setAttribute('aria-label', `${post.date} ${post.platform} — ${post.title}`);
+
+      item.innerHTML = `
+        <div class="platform-badge">${platformIcon(post.platform)}</div>
+        <div class="post-meta">
+          <div class="post-date">${post.date} · ${post.platform}${post.published ? ' · Published' : ''}</div>
+          <div class="post-title">${post.title}</div>
+        </div>
+      `;
+
+      item.addEventListener('click', () => selectPost(post.id));
+      item.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); selectPost(post.id); }
+      });
+
+      group.appendChild(item);
+    });
+
+    sidebar.appendChild(group);
+  });
+}
+
+// ─── POST VIEW BUILD ─────────────────────────────────────────────────────────
+
+function selectPost(id) {
+  activePostId = id;
+  const post = POSTS.find(p => p.id === id);
+  if (!post) return;
+
+  // Update sidebar active state
+  document.querySelectorAll('.post-item').forEach(el => {
+    el.classList.toggle('active', el.getAttribute('data-id') === id);
+  });
+
+  // Close sidebar on mobile
+  if (window.innerWidth <= 768) {
+    document.getElementById('sidebar').classList.remove('open');
+    document.getElementById('sidebar-overlay').classList.remove('open');
+  }
+
+  // Build post view
+  const welcome = document.getElementById('welcome');
+  const postView = document.getElementById('post-view');
+  welcome.style.display = 'none';
+  postView.style.display = 'block';
+
+  const slideCount = post.slides.length;
+  const captionCount = (post.caption_ig ? 1 : 0) + (post.caption_tiktok ? 1 : 0);
+
+  let html = `
+    <div class="post-header">
+      <div class="post-header-left">
+        <div class="post-heading-meta">
+          <span class="meta-chip ${platformClass(post.platform)}">${platformIcon(post.platform)} ${post.platform}</span>
+          <span class="meta-chip">${post.column}</span>
+          ${post.published ? '<span class="meta-chip published">Published</span>' : ''}
+        </div>
+        <div class="post-main-title">${post.title}</div>
+        <div class="post-slide-count">${slideCount} slides · ${post.date}, 2026</div>
+      </div>
+      <button class="copy-all-btn" onclick="copyAll(this, '${id}')">Copy Everything</button>
+    </div>
+  `;
+
+  // Slides
+  html += `<div class="section-label">Slides</div>`;
+
+  post.slides.forEach((slide, i) => {
+    const slideText = buildSlideText(slide);
+    const labelHtml = slide.label ? `<span class="slide-label-tag">${slide.label}</span>` : '';
+    const headlineHtml = slide.headline
+      ? `<div class="slide-headline">${slide.headline.replace(/\n/g, '<br>')}</div>`
+      : '';
+    const bodyHtml = slide.body
+      ? `<div class="slide-body">${slide.body.split('\n').map(l => l ? `<p>${l}</p>` : '').join('')}</div>`
+      : '';
+
+    html += `
+      <div class="slide-card">
+        <div class="slide-card-header">
+          <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+            <span class="slide-number">Slide ${i + 1}</span>
+            ${labelHtml}
+          </div>
+          <button class="copy-btn" onclick="copySlide(this, ${i}, '${id}')">Copy</button>
+        </div>
+        ${headlineHtml}
+        ${bodyHtml}
+      </div>
+    `;
+  });
+
+  // Captions
+  if (post.caption_ig || post.caption_tiktok) {
+    html += `<div class="section-label">Caption</div>`;
+  }
+
+  if (post.caption_ig) {
+    html += `
+      <div class="caption-card">
+        <div class="caption-card-header">
+          <span class="caption-platform-label">📷 Instagram Caption</span>
+          <button class="copy-btn" onclick="copyCaption(this, 'ig', '${id}')">Copy</button>
+        </div>
+        <div class="caption-text">${escapeHtml(post.caption_ig)}</div>
+      </div>
+    `;
+  }
+
+  if (post.caption_tiktok) {
+    html += `
+      <div class="caption-card">
+        <div class="caption-card-header">
+          <span class="caption-platform-label">▶ TikTok Caption</span>
+          <button class="copy-btn" onclick="copyCaption(this, 'tiktok', '${id}')">Copy</button>
+        </div>
+        <div class="caption-text">${escapeHtml(post.caption_tiktok)}</div>
+      </div>
+    `;
+  }
+
+  postView.innerHTML = html;
+
+  // Scroll to top
+  document.getElementById('main').scrollTop = 0;
+  window.scrollTo(0, 0);
+}
+
+function escapeHtml(str) {
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+// ─── COPY ACTIONS ────────────────────────────────────────────────────────────
+
+function copySlide(btn, slideIndex, postId) {
+  const post = POSTS.find(p => p.id === postId);
+  if (!post) return;
+  const text = buildSlideText(post.slides[slideIndex]);
+  copyToClipboard(text, btn);
+}
+
+function copyCaption(btn, type, postId) {
+  const post = POSTS.find(p => p.id === postId);
+  if (!post) return;
+  const text = type === 'ig' ? post.caption_ig : post.caption_tiktok;
+  copyToClipboard(stripMarkdown(text || ''), btn);
+}
+
+function copyAll(btn, postId) {
+  const post = POSTS.find(p => p.id === postId);
+  if (!post) return;
+  copyToClipboard(buildFullText(post), btn);
+}
+
+// ─── MOBILE ──────────────────────────────────────────────────────────────────
+
+function toggleSidebar() {
+  const sidebar = document.getElementById('sidebar');
+  const overlay = document.getElementById('sidebar-overlay');
+  sidebar.classList.toggle('open');
+  overlay.classList.toggle('open');
+}
+
+// ─── KEYBOARD NAV ────────────────────────────────────────────────────────────
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+    const items = [...document.querySelectorAll('.post-item')];
+    const currentIndex = items.findIndex(el => el.getAttribute('data-id') === activePostId);
+    let nextIndex = e.key === 'ArrowDown'
+      ? Math.min(currentIndex + 1, items.length - 1)
+      : Math.max(currentIndex - 1, 0);
+    if (nextIndex >= 0 && nextIndex < items.length) {
+      const nextId = items[nextIndex].getAttribute('data-id');
+      selectPost(nextId);
+      items[nextIndex].focus();
+    }
+    e.preventDefault();
+  }
+});
+
+// ─── INIT ────────────────────────────────────────────────────────────────────
+
+buildSidebar();
+</script>
+</body>
+</html>
