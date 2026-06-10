@@ -1,5 +1,5 @@
-# COPY — 05b · Worth The Price? SPF €8 vs €45 (Updated)
-## TikTok · 5 Slides · Monday June 23, 2026
+# COPY — 05b · Worth The Price? SPF €8 vs €22
+## TikTok · 6 Slides · Monday June 23, 2026
 
 ---
 
@@ -7,8 +7,8 @@
 
 **S1**
 We compared an €8 SPF and a €22 SPF.
-The difference isn't just texture.
-There's a filter gap.
+The €8 one has a PPD of 52.
+That is stronger UVA protection than most premium SPFs publish.
 
 **S2**
 Both use Tinosorb S and Tinosorb M.
@@ -16,40 +16,36 @@ Broad-spectrum. EU-approved. Photostable.
 The core mechanism is the same.
 
 **S3**
-Anthelios adds Mexoryl SX — coverage down to 340nm (UVA1).
-Altruist's filters don't reach that range.
-UVA1 is where photoaging and immunosuppression live.
+Anthelios adds Mexoryl SX — UVA1 coverage down to 340nm.
+Altruist's filters are strong. They don't go that deep.
+Altruist also has Panthenol for post-UV soothing. Water resistant.
 
 **S4**
-Altruist's advantage: dose.
-SPF assumes you apply 2mg/cm². At €8, you do.
-Most people underapply the expensive one. SPF 50 at half-dose ≈ SPF 7.
+Anthelios adds silica + dimethicone —
+sebum control and a lightweight film.
+The compliance advantage is engineered, not accidental.
 
 **S5**
-Anthelios adds silica + dimethicone — engineered for midday reapplication.
-Altruist wins on dosing. Anthelios wins on formula depth.
-Both arguments are real. Choose the one that matches how you behave.
+Altruist's other advantage: dose.
+SPF assumes 2mg/cm². At €8, you apply without calculating.
+Most people underapply expensive SPF. At half dose, SPF 50 ≈ SPF 7.
 
 **S6**
-Altruist: 8.5/10. Best for generous, uncalculated use.
-Anthelios: 9.2/10. Best formula if you'll also apply it correctly.
-The gap is 0.7 points. The decision is behavioural.
+Altruist: 8.5/10. PPD 52. Strong UVA. Panthenol. Water resistant.
+Anthelios: 9.2/10. Deepest UVA1. Photostable film. Compliance-engineered.
+Both arguments are real. The decision is about how you actually behave.
 
 ---
 
 ## TIKTOK CAPTION
 
-We compared the INCI lists of an €8 and a €22 SPF. The filters overlap — but they're not identical, and neither product wins unconditionally.
+Altruist SPF 50 costs €8 and has a published PPD of 52 — 5-star ultra-UVA. That is exceptional UVA protection at any price point. La Roche-Posay Anthelios costs ~€22.
 
-Both use Tinosorb S and Tinosorb M. Anthelios adds Mexoryl SX (UVA1 coverage to 340nm) and Mexoryl XL (improved photostability). That is a real formulation advantage. Altruist doesn't have it.
+Both use Tinosorb S and Tinosorb M. Anthelios adds Mexoryl SX, which extends coverage into UVA1 (340–400nm) — the range most associated with photoaging. Altruist's broad UVA profile is strong; it just doesn't reach that specific depth. Altruist also has Panthenol for post-UV soothing and is water resistant.
 
-But here's Altruist's counterargument: SPF efficacy is tested at 2mg/cm² — about ¼ teaspoon for the face. Most people apply 20–50% of that. At €8, you apply without calculating. Underapply a €22 SPF and SPF 50 drops closer to SPF 7 in real-world performance.
+Then there's the dosing argument. SPF testing assumes 2mg/cm². At €8, you apply without calculating. Most people underapply expensive SPF — at half dose, SPF 50 behaves closer to SPF 7.
 
-Altruist: 8.5/10 — best for generous use. Anthelios: 9.2/10 — best formula, if applied correctly. The decision is about how you actually behave.
-
-@skinlabeditorial · Ingredients, decoded.
-
-#spfscience #sunscreenreview #worthit #ingredientscience #altruist #anthelios #uvascience #skinlabeditorial
+Altruist: 8.5/10 — PPD 52, strong UVA, real soothing benefit, best for generous use. Anthelios: 9.2/10 — deepest UVA1, compliance-engineered finish, best if applied correctly.
 
 @skinlabeditorial · Ingredients, decoded.
 

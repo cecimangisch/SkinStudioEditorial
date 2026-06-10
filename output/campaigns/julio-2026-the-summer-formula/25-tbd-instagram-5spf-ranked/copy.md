@@ -12,8 +12,8 @@ It is probably not the cheapest either.
 
 **S2**
 Altruist SPF 50 — ~€8 — 8.5/10
-Tinosorb S + Tinosorb M. Simple base.
-At €8: you apply the full 2mg/cm² dose without calculating. That is a real advantage most SPF content ignores.
+Tinosorb S + Tinosorb M. PPD 52. 5-star ultra-UVA.
+Strong UVA protection. Panthenol. Water resistant. Best for generous, uncalculated use.
 
 **S3**
 Garnier Ambre Solaire Sensitive Advanced SPF 50+ — ~€12 — 8.6/10
