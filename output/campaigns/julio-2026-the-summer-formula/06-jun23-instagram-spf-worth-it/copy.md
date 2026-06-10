@@ -31,23 +31,28 @@ They co-dissolve into a more coherent, photostable film.
 Better filter distribution. Less degradation over wear time.
 
 **S6**
-Anthelios also contains silica and dimethicone.
-Silica absorbs sebum. Dimethicone forms the lightweight film.
-The "invisible" finish is engineered — not accidental.
+Altruist's real advantage: dose.
+SPF efficacy assumes 2mg/cm² — about ¼ teaspoon for the face.
+Most people apply 20–50% of that. At €8, you don't calculate.
 
 **S7**
-Compliance is the protection variable.
-If the €8 SPF sits on your face all day, it works.
-If the €22 SPF wears better and you actually reapply — so does it.
+Anthelios has its own compliance argument: silica and dimethicone.
+Sebum absorption. Lightweight film. Less reason to skip reapplication.
+Two different routes to the same outcome — you actually wearing SPF.
 
 **S8**
+Anthelios also has the better formula on paper.
+But the formula only works if you use it correctly.
+That is Altruist's counterargument. It is a real one.
+
+**S9**
 Altruist SPF 50 — 8.5/10
-Competent filter stack. Functional base. No depth on UVA1.
-Honest formula at an honest price.
+Strong filters. Low friction on dosing. No UVA1 depth.
+Best SPF for people who will use it generously.
 
 La Roche-Posay Anthelios Invisible Fluid — 9.2/10
-Superior UVA1 coverage. Photostable film chemistry.
-Engineered compliance. Worth the price difference for daily wear.
+Superior UVA1 coverage. Photostable film. Engineered for compliance.
+Best SPF for people who reapply midday.
 
 ---
 
@@ -57,8 +62,10 @@ Altruist SPF 50 costs ~€8. La Roche-Posay Anthelios Invisible Fluid costs ~€
 
 Anthelios adds Mexoryl SX, which extends UVA coverage into the 340–400nm range (UVA1) — the band most associated with photoaging and immunosuppression. Altruist's filter stack doesn't reach this depth. Mexoryl XL, being oil-phase, co-dissolves with Tinosorb S to form a more coherent, photostable film — meaning the filters hold their position better over wear time.
 
-The silica and dimethicone aren't cosmetic decoration. Silica absorbs midday sebum. Dimethicone is the film-former behind the "invisible" finish. These ingredients change how likely you are to reapply — and reapplication is where real-world SPF performance is won or lost.
+Altruist's advantage isn't in the filter stack — it's in the dosing. SPF testing assumes 2mg/cm², roughly ¼ teaspoon for the face. Studies consistently show people apply 20–50% of that amount. At €8, you don't calculate. You apply generously, you reapply at midday, you cover your neck and ears. Underapply Anthelios and SPF 50 behaves closer to SPF 7. Apply Altruist correctly and you get the full protection it was tested at.
 
-Altruist: 8.5/10. Anthelios: 9.2/10. The gap is real and formula-led.
+Anthelios earns its rating on formula: Mexoryl SX goes deeper into UVA1 (340–400nm), Mexoryl XL improves photostability, and the silica + dimethicone system is genuinely engineered for wearability. These are real advantages. But the best SPF is the one you use at the right dose.
+
+Altruist: 8.5/10 — best for generous, uncalculated use. Anthelios: 9.2/10 — best formula if you'll also apply it correctly.
 
 #spfscience #sunscreenreview #worthit #ingredientscience #altruist #anthelios #uvascience #skinlabeditorial

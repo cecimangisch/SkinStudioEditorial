@@ -12,8 +12,8 @@ The order is not what you'd expect.
 
 **S2**
 Budget tier: Altruist €8 vs Garnier €12
-Altruist: Tinosorb S + M. Solid. No extras.
-Garnier adds Mexoryl XL for €4 more. Garnier wins this tier.
+Altruist: Tinosorb S + M. Low cost = full dose = real-world advantage.
+Garnier adds Mexoryl XL. Better filter stack, €4 more. Garnier wins on formula. Close call.
 
 **S3**
 Mid tier: Eucerin €18 vs Anthelios €22
