@@ -55,6 +55,8 @@ Instagram and TikTok run parallel editorial tracks — not the same content adap
 | 22 | Jul 9 | Thu | 10:00 | Instagram | Brand Study | Typology | 8 | YES | NO | — |
 | 23 | Jul 11 | Fri | 20:00 | TikTok | The Record | "SPF is the best anti-aging product. 40 years of data." | 3 | NO | NO | YES (IG Jul 11) |
 | 24 | Jul 11 | Sat | 19:00 | Instagram | The Record | SPF is the best anti-aging product | 2 | NO | NO | — |
+| 25 | Jul 14 | Tue | 20:00 | TikTok | Worth The Price? | 5 SPFs ranked by formula — not price | 4 | NO | YES | YES (IG Jul 14) |
+| 26 | Jul 14 | Tue | 10:00 | Instagram | Worth The Price? | 5 SPFs ranked by formula — not price | 6 | NO | YES | — |
 
 ---
 
@@ -64,7 +66,7 @@ Instagram and TikTok run parallel editorial tracks — not the same content adap
 |---|------|------|--------|-------|--------|-----------|-----------|---------|-----------|
 | IG-01 | Thu Jun 18 | 10:00 | The Label | Colorescience Total Protection No-Show Mineral SPF 50 | 8 | Data/Ink | Save | YES | NO |
 | IG-02 | Sat Jun 20 | 19:00 | The Record | Barrier in summer | 3 | Skin/Petal | Share + Follow | NO | NO |
-| IG-03 | Tue Jun 23 | 10:00 | Worth The Price? | SPF €8 vs €45 | 6 | Texture/Bone | Save + Share | NO | YES |
+| IG-03 | Tue Jun 23 | 10:00 | Worth The Price? | SPF €8 vs €22 | 8 | Texture/Bone | Save + Share | NO | YES |
 | IG-04 | Thu Jun 25 | 10:00 | Ingredient School | Niacinamide, Exactly | 9 | Cover/Lab Sage | Save | NO | NO |
 | IG-05 | Sat Jun 27 | 19:00 | The Verdict | Anthelios Invisible Fluid SPF 50+ | 10 | Data/Ink | Save + PR | YES | NO |
 | IG-06 | Wed Jul 1 | 10:00 | Ingredient School | Ceramides, Exactly | 9 | Texture/Bone | Save | NO | NO |
@@ -73,14 +75,15 @@ Instagram and TikTok run parallel editorial tracks — not the same content adap
 | IG-09 | Tue Jul 7 | 10:00 | Worth The Price? | Vitamin C: €15 vs €65 | 6 | Texture/Bone | Save + Share | NO | YES |
 | IG-10 | Thu Jul 9 | 10:00 | Brand Study | Typology | 8 | Data/Ink | PR + Follow | YES | NO |
 | IG-11 | Sat Jul 11 | 19:00 | The Record | SPF is the best anti-aging product | 2 | Cover/Lab Sage | Share + Follow | NO | NO |
+| IG-12 | Tue Jul 14 | 10:00 | Worth The Price? | 5 SPFs ranked by formula | 6 | Texture/Bone | Save + Share | NO | YES |
 
 **IG Column Distribution:**
-- Ingredient School: 2 (18%)
-- The Label: 2 (18%)
-- The Record: 3 (27%)
-- Worth The Price?: 2 (18%)
-- The Verdict: 1 (9%)
-- Brand Study: 1 (9%)
+- Ingredient School: 2 (15%)
+- The Label: 2 (15%)
+- The Record: 3 (23%)
+- Worth The Price?: 3 (23%)
+- The Verdict: 1 (8%)
+- Brand Study: 1 (8%)
 
 ---
 

@@ -1,4 +1,4 @@
-# COPY — 05b · Worth The Price? SPF €8 vs €45
+# COPY — 05b · Worth The Price? SPF €8 vs €45 (Updated)
 ## TikTok · 5 Slides · Monday June 23, 2026
 
 ---
@@ -6,47 +6,42 @@
 ## TIKTOK
 
 **S1**
-We compared an €8 SPF and a €45 SPF.
-The difference isn't protection.
+We compared an €8 SPF and a €22 SPF.
+The difference isn't just texture.
+There's a filter gap.
 
 **S2**
 Both use Tinosorb S and Tinosorb M.
 Broad-spectrum. EU-approved. Photostable.
-The filters are not the variable.
+The core mechanism is the same.
 
 **S3**
-Anthelios adds silica.
-It controls sebum and reduces whitening.
-That is what the premium buys — texture, not efficacy.
+Anthelios adds Mexoryl SX — coverage down to 340nm (UVA1).
+Altruist's filters don't reach that range.
+UVA1 is where photoaging and immunosuppression live.
 
 **S4**
-Compliance is the real variable.
-A sunscreen you stop wearing at midday
-doesn't protect you from midday UV.
+Anthelios also adds silica and dimethicone —
+sebum control and a lightweight film.
+The compliance advantage is engineered, not accidental.
 
 **S5**
-Altruist: €8. Adequate filters. Less elegant.
-Anthelios: €45. Same filters. Wears better.
-The protection is equal. The experience is not.
+Altruist: 8.5/10. Competent. Honest. Less UVA1 depth.
+Anthelios: 9.2/10. Superior coverage. Better real-world wearability.
+The price gap is formula-led.
 
 ---
 
 ## TIKTOK CAPTION
 
-We compared the INCI lists of an €8 and a €45 SPF. The UV filters are essentially the same.
+We compared the INCI lists of an €8 and a €22 SPF. The filters overlap — but they're not identical.
 
-Both Altruist SPF 50 and La Roche-Posay Anthelios use Tinosorb S and Tinosorb M — broad-spectrum, photostable, EU-approved. The protection mechanism is identical.
+Both use Tinosorb S and Tinosorb M. What Anthelios adds is Mexoryl SX, which extends UVA coverage into the 340–400nm range (UVA1) — the band most associated with photoaging. Altruist's stack doesn't reach this depth.
 
-What the premium buys: silica for sebum control, a lighter film, better mid-day wearability. That is a real difference. It is a compliance difference — not a formulation superiority.
+The silica and dimethicone are compliance ingredients: sebum absorption, lightweight finish, better reapplication behaviour. That matters for real-world protection.
 
-If you wear the €8 SPF all day, it works. If you stop reapplying the €45 because it costs too much to use generously — it doesn't.
-
-Read the label. Choose accordingly.
+Altruist: 8.5/10. Anthelios: 9.2/10. Both work. The formula justifies the gap.
 
 @skinlabeditorial · Ingredients, decoded.
 
-#spfscience #sunscreenreview #worthit #ingredientscience #altruist #anthelios #skinlabeditorial
-
----
-
-*EIC FINAL AUDIT: Hook lands as a fact, not a question. Compliance framing is maintained throughout — no winner declared, variable named. Filters accurately described. Ship test: passes. Approved.*
+#spfscience #sunscreenreview #worthit #ingredientscience #altruist #anthelios #uvascience #skinlabeditorial
