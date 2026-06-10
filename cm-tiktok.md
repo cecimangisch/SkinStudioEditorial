@@ -49,7 +49,9 @@ You receive the shared brand strategy from the Content Strategist. You produce t
 
 | Column | TikTok format | TikTok objective | Priority |
 |--------|--------------|-----------------|----------|
-| Open / Provocation | 2–3 slides | Follows + reach — FYP magnet | PRIMARY |
+| The Record | 2–3 slides | Follows + reach — FYP magnet | PRIMARY |
+| The Numbers | 3–4 slides | Shares + reach — data posts perform natively | PRIMARY |
+| The Mechanism | 3–4 slides | Saves + authority | HIGH |
 | Worth The Price? | 3–4 slides | Shares — native virality format | PRIMARY |
 | Ingredient School | 4–5 slides | Saves + follows | HIGH |
 | The Label | 3–4 slides | Saves + authority | HIGH |
@@ -57,10 +59,10 @@ You receive the shared brand strategy from the Content Strategist. You produce t
 | Brand Study | 3–4 slides | Authority | LOW — IG primary |
 
 **TikTok-first content** (content that performs better on TikTok than IG):
-- Provocation statements — "You are not buying skincare. You are buying a story about skincare."
-- Price comparison reveals — the €X vs €Y format is natively shareable on TikTok
-- Single-fact posts — one surprising fact, three slides, done
-- Myth corrections — "This is wrong. Here's why." structure performs on FYP
+- The Record posts — "This claim is wrong. Here's the science." structure performs on FYP
+- The Numbers posts — one surprising figure, three slides, done
+- Price comparison reveals (Worth The Price?) — the €X vs €Y format is natively shareable on TikTok
+- The Mechanism posts — "Here's how it actually works." for cold audiences
 
 **TikTok-exclusive content ideas** (content that does not need an IG equivalent):
 - Reaction to a trending skincare claim (timely, FYP-indexed)

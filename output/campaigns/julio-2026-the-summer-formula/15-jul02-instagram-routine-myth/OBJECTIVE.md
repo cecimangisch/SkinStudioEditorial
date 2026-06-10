@@ -1,7 +1,7 @@
-# OBJECTIVE — 15 · Open/Provocation: The Summer Routine Myth
+# OBJECTIVE — 15 · The Record: The Summer Routine Myth
 ## Instagram · Wednesday July 2, 2026 · 12:00 CET
 
-**Column:** Open/Provocation
+**Column:** The Record
 **Format:** 3-slide carousel
 **TikTok Equivalent:** YES (post 12, June 29 — TikTok ran this three days earlier)
 

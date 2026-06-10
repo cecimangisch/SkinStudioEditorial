@@ -1,10 +1,10 @@
 # OBJECTIVE — 13 · The best anti-aging move this summer costs nothing.
-## Open/Provocation · July 30, 2026
+## The Record · July 30, 2026
 
 **Editorial Objective:**
 Campaign closing post. The "anti-aging move that costs nothing" is SPF — applied consistently, in adequate quantity, every day. This is the campaign's conclusion stated obliquely: the entire summer formula (barrier support, vitamin C, SPF, ceramides) reduces to one non-negotiable. The post is deliberately understated. It does not say "use SPF." It lets the reader arrive at the mechanism themselves.
 
-**Column:** Open/Provocation
+**Column:** The Record
 **Slides:** 2
 **Hook:** "The best anti-aging move this summer costs nothing."
 

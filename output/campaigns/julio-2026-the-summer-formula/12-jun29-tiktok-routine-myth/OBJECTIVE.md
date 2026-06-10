@@ -1,7 +1,7 @@
-# OBJECTIVE — 12 · Open/Provocation: The Summer Routine Myth
+# OBJECTIVE — 12 · The Record: The Summer Routine Myth
 ## TikTok · Sunday June 29, 2026 · 20:00 CET
 
-**Column:** Open/Provocation
+**Column:** The Record
 **Format:** 3-slide Photo Mode
 **TikTok-exclusive:** YES (IG version is post 15, July 2)
 

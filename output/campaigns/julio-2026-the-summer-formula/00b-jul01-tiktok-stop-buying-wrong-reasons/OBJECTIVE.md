@@ -2,7 +2,7 @@
 
 **Date:** Wednesday, July 1, 2026
 **Platform:** TikTok Photo Mode
-**Column:** Open / Provocation — Account Manifesto
+**Column:** The Record — Account Manifesto
 **Format:** 4-slide static carousel (vertical, 9:16)
 **Slug:** stop-buying-wrong-reasons-tiktok
 

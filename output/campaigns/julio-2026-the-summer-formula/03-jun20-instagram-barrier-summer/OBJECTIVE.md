@@ -1,7 +1,7 @@
 # OBJECTIVE — 03 · Barrier in Summer
 ## Instagram · Saturday June 20, 2026 · 19:00 CET
 
-**Column:** Open/Provocation
+**Column:** The Record
 **Format:** 3-slide carousel
 **Grid Tile:** Skin/Petal (warm background — Petal #E6D2D0)
 

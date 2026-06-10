@@ -2,7 +2,7 @@
 
 **Date:** Wednesday, July 1, 2026
 **Platform:** Instagram
-**Column:** Open / Provocation — Account Manifesto
+**Column:** The Record — Account Manifesto
 **Format:** 4-slide carousel (1080×1080px)
 **Slug:** stop-buying-wrong-reasons
 

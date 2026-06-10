@@ -1,7 +1,7 @@
-# OBJECTIVE — 24 · Open/Provocation: SPF is Anti-Aging (Campaign Closer)
+# OBJECTIVE — 24 · The Record: SPF is Anti-Aging (Campaign Closer)
 ## Instagram · Friday July 11, 2026 · 12:00 CET
 
-**Column:** Open/Provocation
+**Column:** The Record
 **Format:** 2-slide carousel
 **TikTok Equivalent:** YES (post 23, same day — TikTok has 3 slides, IG is the distilled closer)
 

@@ -116,8 +116,14 @@ The strong hook states a fact the reader didn't know but immediately recognizes 
 - S4–S5: Product B — key INCI facts
 - S6: Verdict — who buys which and why
 
-### Open / Provocation (1–4 slides IG · 2–3 slides TikTok)
-Statement → evidence → principle. Never over-explain. Trust the reader.
+### The Record (3–5 slides IG · 2–3 slides TikTok)
+Correction of an industry claim. Structure: wrong belief → the evidence → what the science actually says. Controlled, sourced, no outrage.
+
+### The Numbers (4–6 slides IG · 3–4 slides TikTok)
+Data-led reframe. Structure: the number → what it means → what actually matters. The post is the figure, not the argument.
+
+### The Mechanism (5–7 slides IG · 3–4 slides TikTok)
+Biology explanation. Structure: the process → how it works → why it matters in practice. No brand, no myth correction — pure mechanism.
 
 ### Brand Study — "Understanding [Brand]" (8–10 slides IG · 4–5 slides TikTok)
 - S1: Brand name

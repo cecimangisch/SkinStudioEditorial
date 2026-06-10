@@ -1,10 +1,10 @@
 # OBJECTIVE — 01 · SPF Math
-## Open/Provocation · July 2, 2026
+## The Record · July 2, 2026
 
 **Editorial Objective:**
 Correct a widespread consumer misconception about SPF numbers without being didactic. The SPF scale is logarithmic, not linear. SPF 50 blocks ~98% of UVB. SPF 25 blocks ~96%. The difference is marginal. The application quantity is not. This is a reach post — designed to stop the scroll with a counterintuitive claim, then deliver the actual mechanism. It opens the campaign's authority register.
 
-**Column:** Open/Provocation
+**Column:** The Record
 **Slides:** 2
 **Hook:** "SPF 50 doesn't mean twice the protection of SPF 25."
 

@@ -1,7 +1,7 @@
-# OBJECTIVE — 23 · Open/Provocation: SPF is Anti-Aging
+# OBJECTIVE — 23 · The Record: SPF is Anti-Aging
 ## TikTok · Friday July 11, 2026 · 20:00 CET
 
-**Column:** Open/Provocation
+**Column:** The Record
 **Format:** 3-slide Photo Mode
 **IG Equivalent:** YES (post 24, same day — IG is the campaign closer)
 

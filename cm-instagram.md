@@ -25,7 +25,7 @@ You receive the shared brand strategy from the Content Strategist. You produce t
 **What this means for content decisions:**
 - The first slide must stop the scroll. The last slide must be save-worthy.
 - Ingredient School and The Label over-index on saves — prioritize them.
-- Open/Provocation posts over-index on shares and comments — use them for reach.
+- The Record and The Numbers posts over-index on shares and comments — use them for reach.
 - Carousels consistently outperform single images for educational content.
 - Captions matter: IG shows the first 125 characters before "more." The hook must land there.
 
@@ -56,7 +56,9 @@ Rule: never two Ink tiles adjacent. Plan the calendar so the grid reads as a com
 | The Verdict | 10-slide carousel | Authority + PR — longer dwell time |
 | Worth The Price? | 6-slide carousel | Saves + shares — virality format |
 | Brand Study | 8–10 slides | PR attraction — lower frequency |
-| Open / Provocation | 1–4 slides | Reach + follows — opens new audiences |
+| The Record | 3–5 slides | Reach + follows — corrections + myth-busting |
+| The Numbers | 4–6 slides | Shares + saves — data that reframes beliefs |
+| The Mechanism | 5–7 slides | Saves + authority — biology explanations |
 
 ---
 

@@ -1,7 +1,7 @@
-# OBJECTIVE — 07 · Open/Provocation: Barrier vs Oily
+# OBJECTIVE — 07 · The Record: Barrier vs Oily
 ## TikTok · Thursday June 25, 2026 · 20:00 CET
 
-**Column:** Open/Provocation
+**Column:** The Record
 **Format:** 3-slide Photo Mode
 **TikTok-exclusive:** YES (no IG equivalent)
 

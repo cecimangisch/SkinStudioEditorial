@@ -1,7 +1,7 @@
 # OBJECTIVE — 02 · SPF 30 vs SPF 50: The Math
 ## TikTok · Friday June 19, 2026 · 20:00 CET
 
-**Column:** Open/Provocation
+**Column:** The Numbers
 **Format:** 3-slide Photo Mode
 **TikTok-exclusive:** YES (no IG equivalent)
 

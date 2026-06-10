@@ -61,14 +61,18 @@ Design is handled externally by the design team. The system produces copy only.
 
 ## EDITORIAL COLUMNS
 
-| Column | Trigger phrase | Format | Objective |
-|---|---|---|---|
-| Ingredient School | "X, Exactly." | 9-slide carousel | Authority + saves |
-| The Label | "The Label: [Product]" | 8-slide carousel | Trust + shares |
-| The Verdict | "The Verdict: [Product]" | 10-slide carousel | Authority + PR |
-| Worth The Price? | "€X vs €Y" / "Worth it?" | 6 slides IG / 4 TikTok | Virality + saves |
-| Brand Study | "Understanding [Brand]" | 8-10 slides | PR attraction |
-| Open / Provocation | Statement post | 1-5 slides | Reach + follows |
+| Column | Definition | Trigger phrase | Format | Objective |
+|---|---|---|---|---|
+| Ingredient School | The science of one ingredient: mechanism, evidence, formulation behavior. | "[Ingredient], Exactly." | 9-slide carousel | Authority + saves |
+| The Label | Full INCI audit of a specific product. We read the label so you don't have to. | "The Label: [Product]" | 8-slide carousel | Trust + shares |
+| The Verdict | Independent full review: formulation + texture + efficacy + Lab Score. Testing, not just INCI parsing. | "The Verdict: [Product]" | 10-slide carousel | Authority + PR |
+| Worth The Price? | Side-by-side formulation and value comparison of two price-point competitors. The answer is always formula-led. | "€X vs €Y" / "Worth it?" | 6 slides IG / 4 TikTok | Virality + saves |
+| Brand Study | Formulation philosophy autopsy of one brand. Ingredient patterns, positioning gaps, marketing vs. science. | "Understanding [Brand]" | 8-10 slides | PR attraction |
+| The Mechanism | How something works in the skin — a biological process, UV interaction, barrier function. Not about a product. About the biology. | "[Process], explained." | 5-7 slides | Authority + saves |
+| The Numbers | Data, percentages, and math that reframe a common belief. The point is always the number, not the narrative. | "The math on [X]" | 4-6 slides | Virality + saves |
+| The Record | Correction of a claim the beauty industry has made that science does not support. Evidence-led, no hysteria. | "The record on [X]" / declarative statement | 3-5 slides | Reach + follows + trust |
+
+**The Label vs The Verdict rule:** The Label = INCI audit (formula on paper). The Verdict = tested performance (formula in use). A product can receive both — The Label first, The Verdict after testing.
 
 ---
 

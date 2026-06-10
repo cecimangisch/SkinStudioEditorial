@@ -1,10 +1,10 @@
 # OBJECTIVE — 09 · You don't need a summer routine. You need to understand your barrier.
-## Open/Provocation · July 21, 2026
+## The Record · July 21, 2026
 
 **Editorial Objective:**
 The "summer routine switch" is one of the most persistent myths in skincare content. The implication that a different season requires an entirely different set of products is commercially convenient but scientifically unfounded. What changes in summer is the set of external stressors — UV, heat, humidity, sweat — and how the skin responds to them. The response is barrier-mediated. This post clarifies the distinction: understanding barrier function is more useful than following seasonal product swap guides.
 
-**Column:** Open/Provocation
+**Column:** The Record
 **Slides:** 3
 **Hook:** "You don't need a summer routine. You need to understand your barrier."
 

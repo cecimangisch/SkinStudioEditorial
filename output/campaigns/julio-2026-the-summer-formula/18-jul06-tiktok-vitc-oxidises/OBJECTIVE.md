@@ -1,7 +1,7 @@
-# OBJECTIVE — 18 · Open/Provocation: Vitamin C Oxidises
+# OBJECTIVE — 18 · The Record: Vitamin C Oxidises
 ## TikTok · Sunday July 6, 2026 · 20:00 CET
 
-**Column:** Open/Provocation
+**Column:** The Record
 **Format:** 3-slide Photo Mode
 **TikTok-exclusive:** YES (no IG equivalent — bridges to the Vitamin C Worth It? posts)
 

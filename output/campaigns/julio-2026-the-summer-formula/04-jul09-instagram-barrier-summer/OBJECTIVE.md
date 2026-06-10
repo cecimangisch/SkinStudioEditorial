@@ -1,10 +1,10 @@
 # OBJECTIVE — 04 · Barrier Summer
-## Open/Provocation · July 9, 2026
+## The Record · July 9, 2026
 
 **Editorial Objective:**
 Challenge the common belief that moisturiser is causing summer breakouts. The actual mechanism is sweat-induced barrier disruption combined with increased sebum production under heat — not the moisturiser formulation. This post pivots the campaign from UV protection to barrier function, setting up the Niacinamide and Ceramides posts that follow.
 
-**Column:** Open/Provocation
+**Column:** The Record
 **Slides:** 2
 **Hook:** "Your moisturiser isn't breaking you out. The summer is."
 
