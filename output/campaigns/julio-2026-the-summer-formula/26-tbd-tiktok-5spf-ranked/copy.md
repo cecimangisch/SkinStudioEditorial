@@ -16,13 +16,13 @@ Altruist: Tinosorb S + M. Low cost = full dose = real-world advantage.
 Garnier adds Mexoryl XL. Better filter stack, €4 more. Garnier wins on formula. Close call.
 
 **S3**
-Mid tier: Eucerin €18 vs Anthelios UVMune 400 €25
+Mid tier: Eucerin €18 vs Anthelios UVMune 400 €20
 Eucerin: four-filter system with Licochalcone A. Strong.
 Anthelios adds Mexoryl 400 — full UVA spectrum to 400nm. Only SPF in this group with it. Anthelios wins.
 
 **S4**
 Formula ranking, 1 to 5:
-1. Anthelios UVMune 400 €25 — 9.3/10
+1. Anthelios UVMune 400 €20 — 9.3/10
 2. ISDIN €28 — 9.0/10
 3. Eucerin €18 — 8.8/10
 4. Garnier €12 — 8.6/10
@@ -37,7 +37,7 @@ We ranked 5 pharmacy SPFs by formula quality, not price. Here's what the INCI li
 
 Budget tier: Garnier Sensitive Advanced (€12) beats Altruist (€8) — three filters vs two, including Mexoryl XL. The €4 difference is real on paper.
 
-Mid tier: Anthelios UVMune 400 (€25) beats Eucerin (€18) — Mexoryl 400 covers the full UVA spectrum to 400nm, the deepest coverage in this group and in pharmacy SPF generally.
+Mid tier: Anthelios UVMune 400 (€20) beats Eucerin (€18) — Mexoryl 400 covers the full UVA spectrum to 400nm, the deepest coverage in this group and in pharmacy SPF generally.
 
 ISDIN Fusion Fluid (€28) is the most expensive and ranks second. Excellent four-filter system and premium texture — but Anthelios costs less and goes deeper on UVA.
 

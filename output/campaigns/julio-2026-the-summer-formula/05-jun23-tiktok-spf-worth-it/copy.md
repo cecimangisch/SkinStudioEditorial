@@ -1,4 +1,4 @@
-# COPY — 05b · Worth The Price? SPF €8 vs €25
+# COPY — 05b · Worth The Price? SPF €8 vs €20
 ## TikTok · 5 Slides · Monday June 23, 2026
 
 ---
@@ -7,7 +7,7 @@
 
 **S1**
 Altruist SPF 50: €8. PPD 52. 5-star ultra-UVA.
-Anthelios UVMune 400: €25. Mexoryl 400.
+Anthelios UVMune 400: €20. Mexoryl 400.
 One number surprises you. The other explains the price.
 
 **S2**
@@ -34,7 +34,7 @@ The decision is not about quality. It is about behaviour.
 
 ## TIKTOK CAPTION
 
-Altruist SPF 50 costs €8 and has a PPD of 52 — that is 5-star ultra-UVA, exceeding EU standards. La Roche-Posay Anthelios UVMune 400 costs ~€25 and contains Mexoryl 400, a patented filter that covers the full UVA spectrum to 400nm. No other pharmacy SPF has this.
+Altruist SPF 50 costs €8 and has a PPD of 52 — that is 5-star ultra-UVA, exceeding EU standards. La Roche-Posay Anthelios UVMune 400 costs ~€20 and contains Mexoryl 400, a patented filter that covers the full UVA spectrum to 400nm. No other pharmacy SPF has this.
 
 Both use Tinosorb S and Tinosorb M as the shared broad-spectrum base. Altruist adds Panthenol (post-UV soothing), is water resistant, and at €8 you apply the full recommended dose without hesitation. Most people underapply expensive SPF — at half dose, SPF 50 behaves closer to SPF 7.
 

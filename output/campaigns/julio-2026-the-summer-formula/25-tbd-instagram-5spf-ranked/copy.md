@@ -26,7 +26,7 @@ Tinosorb S + Tinosorb M + Uvinul A Plus + Uvinul T 150.
 Four-filter system. Licochalcone A antioxidant. The broadest chemical UVA+UVB breadth in this group.
 
 **S5**
-La Roche-Posay Anthelios UVMune 400 SPF 50+ — ~€25 — 9.3/10
+La Roche-Posay Anthelios UVMune 400 SPF 50+ — ~€20 — 9.3/10
 Mexoryl 400 + Mexoryl SX + Mexoryl XL + Tinosorb S + Tinosorb M.
 Full UVA spectrum to 400nm. Only pharmacy SPF with this. Silica + Dimethicone for compliance.
 
@@ -51,7 +51,7 @@ Altruist (€8) is competent — Tinosorb S and M, solid broad-spectrum base. Ga
 
 Eucerin (€18) runs a four-filter system — Tinosorb S+M plus Uvinul A Plus and Uvinul T 150, the broadest chemical UVA+UVB breadth in this group, with Licochalcone A as antioxidant support. ISDIN Fusion Fluid (€28) runs the same four-filter logic with a premium texture finish.
 
-Anthelios UVMune 400 (€25) ranks first because of Mexoryl 400 — a patented filter covering the full UVA spectrum to 400nm. No other pharmacy SPF has this. The silica + dimethicone system adds compliance engineering. ISDIN costs €3 more and ranks second.
+Anthelios UVMune 400 (€20) ranks first because of Mexoryl 400 — a patented filter covering the full UVA spectrum to 400nm. No other pharmacy SPF has this. The silica + dimethicone system adds compliance engineering. ISDIN costs €3 more and ranks second.
 
 Formula rank: Anthelios 9.3 · ISDIN 9.0 · Eucerin 8.8 · Garnier 8.6 · Altruist 8.5.
 The ranking is not linear with price. It never is.
