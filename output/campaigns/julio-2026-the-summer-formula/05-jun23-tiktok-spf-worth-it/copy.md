@@ -1,52 +1,45 @@
-# COPY — 05b · Worth The Price? SPF €8 vs €22
-## TikTok · 6 Slides · Monday June 23, 2026
+# COPY — 05b · Worth The Price? SPF €8 vs €25
+## TikTok · 5 Slides · Monday June 23, 2026
 
 ---
 
 ## TIKTOK
 
 **S1**
-We compared an €8 SPF and a €22 SPF.
-The €8 one has a PPD of 52.
-That is stronger UVA protection than most premium SPFs publish.
+Altruist SPF 50: €8. PPD 52. 5-star ultra-UVA.
+Anthelios UVMune 400: €25. Mexoryl 400.
+One number surprises you. The other explains the price.
 
 **S2**
 Both use Tinosorb S and Tinosorb M.
-Broad-spectrum. EU-approved. Photostable.
-The core mechanism is the same.
+Same core mechanism. Same broad-spectrum foundation.
+The difference is what comes next.
 
 **S3**
-Anthelios adds Mexoryl SX — UVA1 coverage down to 340nm.
-Altruist's filters are strong. They don't go that deep.
-Altruist also has Panthenol for post-UV soothing. Water resistant.
+Anthelios UVMune 400 adds Mexoryl 400 —
+coverage to 400nm, the full UVA spectrum.
+No other pharmacy SPF does this.
 
 **S4**
-Anthelios adds silica + dimethicone —
-sebum control and a lightweight film.
-The compliance advantage is engineered, not accidental.
-
-**S5**
-Altruist's other advantage: dose.
-SPF assumes 2mg/cm². At €8, you apply without calculating.
+Altruist has Panthenol. Water resistant.
+And at €8, you apply the full 2mg/cm² without thinking.
 Most people underapply expensive SPF. At half dose, SPF 50 ≈ SPF 7.
 
-**S6**
-Altruist: 8.5/10. PPD 52. Strong UVA. Panthenol. Water resistant.
-Anthelios: 9.2/10. Deepest UVA1. Photostable film. Compliance-engineered.
-Both arguments are real. The decision is about how you actually behave.
+**S5**
+Altruist: 8.5/10. PPD 52. Strong UVA. Best for generous use.
+Anthelios UVMune 400: 9.3/10. Full UVA spectrum. Best formula available.
+The decision is not about quality. It is about behaviour.
 
 ---
 
 ## TIKTOK CAPTION
 
-Altruist SPF 50 costs €8 and has a published PPD of 52 — 5-star ultra-UVA. That is exceptional UVA protection at any price point. La Roche-Posay Anthelios costs ~€22.
+Altruist SPF 50 costs €8 and has a PPD of 52 — that is 5-star ultra-UVA, exceeding EU standards. La Roche-Posay Anthelios UVMune 400 costs ~€25 and contains Mexoryl 400, a patented filter that covers the full UVA spectrum to 400nm. No other pharmacy SPF has this.
 
-Both use Tinosorb S and Tinosorb M. Anthelios adds Mexoryl SX, which extends coverage into UVA1 (340–400nm) — the range most associated with photoaging. Altruist's broad UVA profile is strong; it just doesn't reach that specific depth. Altruist also has Panthenol for post-UV soothing and is water resistant.
+Both use Tinosorb S and Tinosorb M as the shared broad-spectrum base. Altruist adds Panthenol (post-UV soothing), is water resistant, and at €8 you apply the full recommended dose without hesitation. Most people underapply expensive SPF — at half dose, SPF 50 behaves closer to SPF 7.
 
-Then there's the dosing argument. SPF testing assumes 2mg/cm². At €8, you apply without calculating. Most people underapply expensive SPF — at half dose, SPF 50 behaves closer to SPF 7.
-
-Altruist: 8.5/10 — PPD 52, strong UVA, real soothing benefit, best for generous use. Anthelios: 9.2/10 — deepest UVA1, compliance-engineered finish, best if applied correctly.
+Altruist: 8.5/10 — PPD 52, strong UVA, best for generous uncalculated use. Anthelios UVMune 400: 9.3/10 — the most complete UVA architecture in pharmacy SPF, if you apply it correctly.
 
 @skinlabeditorial · Ingredients, decoded.
 
-#spfscience #sunscreenreview #worthit #ingredientscience #altruist #anthelios #uvascience #skinlabeditorial
+#spfscience #sunscreenreview #worthit #ingredientscience #altruist #anthelios #uvmune #uvascience #skinlabeditorial

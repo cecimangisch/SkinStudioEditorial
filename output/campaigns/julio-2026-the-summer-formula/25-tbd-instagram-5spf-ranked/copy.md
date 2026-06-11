@@ -26,16 +26,16 @@ Tinosorb S + Tinosorb M + Uvinul A Plus + Uvinul T 150.
 Four-filter system. Licochalcone A antioxidant. The broadest chemical UVA+UVB breadth in this group.
 
 **S5**
-La Roche-Posay Anthelios Invisible Fluid SPF 50+ — ~€22 — 9.2/10
-Tinosorb S + Tinosorb M + Mexoryl SX + Mexoryl XL.
-Deepest UVA1 coverage. Silica + Dimethicone for engineered compliance.
+La Roche-Posay Anthelios UVMune 400 SPF 50+ — ~€25 — 9.3/10
+Mexoryl 400 + Mexoryl SX + Mexoryl XL + Tinosorb S + Tinosorb M.
+Full UVA spectrum to 400nm. Only pharmacy SPF with this. Silica + Dimethicone for compliance.
 
 ISDIN Fusion Fluid SPF 50+ — ~€28 — 9.0/10
 Tinosorb S + Tinosorb M + Uvinul A Plus + Uvinul T 150.
-Strongest UVB coverage. Premium fusion texture. Anthelios ranks higher: the Mexoryl SX advantage on UVA1 is decisive.
+Four-filter system. Premium texture. More expensive than Anthelios. Ranks second.
 
 **S6**
-Formula ranking: Anthelios (9.2) · ISDIN (9.0) · Eucerin (8.8) · Garnier (8.6) · Altruist (8.5)
+Formula ranking: Anthelios (9.3) · ISDIN (9.0) · Eucerin (8.8) · Garnier (8.6) · Altruist (8.5)
 Price ranking: ISDIN · Anthelios · Eucerin · Garnier · Altruist
 
 The most expensive doesn't win. The second-cheapest beats three products above it in price.
@@ -51,9 +51,9 @@ Altruist (€8) is competent — Tinosorb S and M, solid broad-spectrum base. Ga
 
 Eucerin (€18) runs a four-filter system — Tinosorb S+M plus Uvinul A Plus and Uvinul T 150, the broadest chemical UVA+UVB breadth in this group, with Licochalcone A as antioxidant support. ISDIN Fusion Fluid (€28) runs the same four-filter logic with a premium texture finish.
 
-Anthelios (€22) ranks first — not because it's the priciest, but because Mexoryl SX gives it the deepest UVA1 coverage in this group (340–400nm), and the silica + dimethicone system is engineered compliance. ISDIN costs more and ranks second.
+Anthelios UVMune 400 (€25) ranks first because of Mexoryl 400 — a patented filter covering the full UVA spectrum to 400nm. No other pharmacy SPF has this. The silica + dimethicone system adds compliance engineering. ISDIN costs €3 more and ranks second.
 
-Formula rank: Anthelios 9.2 · ISDIN 9.0 · Eucerin 8.8 · Garnier 8.6 · Altruist 8.5.
+Formula rank: Anthelios 9.3 · ISDIN 9.0 · Eucerin 8.8 · Garnier 8.6 · Altruist 8.5.
 The ranking is not linear with price. It never is.
 
 #spfscience #sunscreenranking #worthit #ingredientscience #altruist #anthelios #eucerin #isdin #garnier #skinlabeditorial
