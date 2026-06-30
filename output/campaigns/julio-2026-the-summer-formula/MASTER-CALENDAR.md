@@ -205,7 +205,8 @@ output/campaigns/julio-2026-the-summer-formula/
 | Post | Date | Platform | Column | Topic | Status |
 |------|------|----------|--------|-------|--------|
 | 27 | Jul 12 | TikTok | The Mechanism | Adjusting, Not Switching — summer product adjustments | CREATED |
-| 28 (TBD) | Jul 14 | IG + TikTok | The Audit | Summer 2026 Launches: Formula vs Hype (10 products, INVEST/SAVE/SKIP) | PENDING |
+| 28 | Jul 14 | Instagram | The Audit | Summer 2026 Launches: Formula vs Hype (13 products, INVEST/SAVE/SKIP) | CREATED |
+| 29 | Jul 14 | TikTok | The Audit | Summer 2026 Launches: Formula vs Hype (13 products, INVEST/SAVE/SKIP) | CREATED |
 
 ---
 
