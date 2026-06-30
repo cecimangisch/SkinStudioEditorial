@@ -57,6 +57,7 @@ Instagram and TikTok run parallel editorial tracks — not the same content adap
 | 24 | Jul 11 | Sat | 19:00 | Instagram | The Record | SPF is the best anti-aging product | 2 | NO | NO | — |
 | 25 | Jul 14 | Tue | 20:00 | TikTok | Worth The Price? | 5 SPFs ranked by formula — not price | 4 | NO | YES | YES (IG Jul 14) |
 | 26 | Jul 14 | Tue | 10:00 | Instagram | Worth The Price? | 5 SPFs ranked by formula — not price | 6 | NO | YES | — |
+| 27 | Jul 12 | Sat | 18:00 | TikTok | The Mechanism | Adjusting, Not Switching — summer product adjustments | 5 | NO | NO | NO |
 
 ---
 
@@ -191,8 +192,20 @@ output/campaigns/julio-2026-the-summer-formula/
 ├── 21-jul09-tiktok-brand-study-typology/
 ├── 22-jul09-instagram-brand-study-typology/
 ├── 23-jul11-tiktok-spf-antiaging-close/
-└── 24-jul11-instagram-spf-antiaging-close/
+├── 24-jul11-instagram-spf-antiaging-close/
+├── 25-jul14-tiktok-5spf-ranked/
+├── 26-jul14-instagram-5spf-ranked/
+└── 27-jul12-tiktok-adjusting-not-switching/
 ```
+
+---
+
+## POST-CAMPAIGN ADDITIONS
+
+| Post | Date | Platform | Column | Topic | Status |
+|------|------|----------|--------|-------|--------|
+| 27 | Jul 12 | TikTok | The Mechanism | Adjusting, Not Switching — summer product adjustments | CREATED |
+| 28 (TBD) | Jul 14 | IG + TikTok | The Audit | Summer 2026 Launches: Formula vs Hype (10 products, INVEST/SAVE/SKIP) | PENDING |
 
 ---
 

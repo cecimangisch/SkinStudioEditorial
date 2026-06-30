@@ -1861,7 +1861,46 @@ function toggleSidebar() {
 
 document.addEventListener('keydown', (e) => {
   if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
-    const items = [...document.querySelectorAll('.post-item')];
+    const items = [...document.querySelectorAll('.post-item'),
+  {
+    id: "27",
+    date: "Jul 12",
+    dateSort: "2026-07-12",
+    platform: "TikTok",
+    column: "The Mechanism",
+    title: "Adjusting, Not Switching",
+    published: false,
+    slides: [
+      {
+        label: null,
+        headline: "You don't change products in summer.",
+        body: "You understand the conditions and adjust how you use them."
+      },
+      {
+        label: null,
+        headline: "UV degrades ceramides in your stratum corneum.",
+        body: "When the barrier thins, two things happen:\nTransepidermal water loss increases. Sebum production increases in compensation.\nNeither is solved by switching products."
+      },
+      {
+        label: null,
+        headline: "Adjustment one: layering & frequency.",
+        body: "Apply ceramide-containing products more frequently.\nMorning and evening — not just evening.\nYour barrier is working harder to compensate."
+      },
+      {
+        label: null,
+        headline: "Adjustment two: timing.",
+        body: "Vitamin C oxidises in daylight.\nApply ascorbic acid serums in your evening routine when light exposure ends.\nSame product. Different timing."
+      },
+      {
+        label: null,
+        headline: "The summer routine edit is a marketing construct.",
+        body: "What actually changes is how your products face the conditions.\nAdjustment isn't buying new. It's understanding why existing ones need different use."
+      }
+    ],
+    caption_tiktok: "You don't need a different skincare routine in summer. You need to adjust how you use the one you have.\n\nHere's why: UV exposure degrades ceramides in the stratum corneum — the lipid barrier holding your skin together. When ceramide levels drop, two things follow: transepidermal water loss increases, and sebum production increases in compensation. Neither of these is addressed by buying lighter products or a seasonal edit.\n\nAdjustments instead: Apply barrier-supporting products more frequently. Your skin is working harder to compensate for UV-induced barrier stress — support it twice daily, not just evening. Time photosensitive ingredients correctly. Vitamin C (L-ascorbic acid) oxidises in light. Morning application means your serum is degraded before it penetrates. Evening application — when light exposure ends — lets it work.\n\nSame products. Different frequency, timing, and logic.\n\nThe summer routine edit is a marketing format. The actual intervention is understanding the conditions — and adjusting the application of what you already own.\n\n@skinlabeditorial · Ingredients, decoded.\n\n#summerroutine #skinbarrier #vitaminc #ceramides #skinscience #ingredientscience #skinlabeditorial"
+  }
+
+];
     const currentIndex = items.findIndex(el => el.getAttribute('data-id') === activePostId);
     let nextIndex = e.key === 'ArrowDown'
       ? Math.min(currentIndex + 1, items.length - 1)
