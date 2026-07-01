@@ -46,6 +46,7 @@ Instagram and TikTok run parallel editorial tracks — not the same content adap
 | 13 | Jul 1 | Wed | 20:00 | TikTok | Ingredient School | Ceramides — barrier mechanism | 4 | NO | NO | YES (IG Jul 1) |
 | 14 | Jul 1 | Wed | 10:00 | Instagram | Ingredient School | Ceramides, Exactly | 9 | NO | NO | — |
 | 15 | Jul 2 | Thu | 10:00 | Instagram | The Record | The routine myth | 3 | NO | NO | — |
+| 30 | Jul 2 | Wed | 20:00 | TikTok | The Mechanism | Summer Routines by Skin Type | 5 | NO | NO | NO |
 | 16 | Jul 4 | Fri | 20:00 | TikTok | The Label | CeraVe Moisturising Lotion AM SPF 30 | 4 | NO | NO | YES (IG Jul 4) |
 | 17 | Jul 4 | Sat | 19:00 | Instagram | The Label | CeraVe Moisturising Lotion AM SPF 30 | 8 | NO | NO | — |
 | 18 | Jul 6 | Sun | 18:00 | TikTok | The Record | Vitamin C oxidises in daylight | 3 | NO | NO | NO |
