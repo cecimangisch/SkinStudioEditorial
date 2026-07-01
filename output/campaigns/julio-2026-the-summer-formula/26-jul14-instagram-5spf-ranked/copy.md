@@ -1,5 +1,5 @@
-# COPY — 25 · Worth The Price? 5 SPFs, Ranked by Formula
-## Instagram · 6 Slides · TBD
+# COPY — 26 · Worth The Price? 5 SPFs, Ranked by Formula
+## Instagram · 6 Slides · Tuesday July 14, 2026
 
 ---
 

@@ -1,5 +1,5 @@
-# COPY — 26 · Worth The Price? 5 SPFs, Ranked by Formula
-## TikTok · 4 Slides · TBD
+# COPY — 25 · Worth The Price? 5 SPFs, Ranked by Formula
+## TikTok · 4 Slides · Tuesday July 14, 2026
 
 ---
 
